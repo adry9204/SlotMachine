@@ -24,7 +24,7 @@ class GameObject : SKSpriteNode, GameProtocol
     // Life-Cycle Functions
     
     
-    func Start()
+    func Start(xPos: Double, yPos: Double)
     {
         
     }

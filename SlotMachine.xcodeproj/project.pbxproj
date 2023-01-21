@@ -18,6 +18,10 @@
 		280B2644297C535E00A2BCB7 /* GameProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280B2643297C535E00A2BCB7 /* GameProtocol.swift */; };
 		280B2646297C537B00A2BCB7 /* GameObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280B2645297C537B00A2BCB7 /* GameObject.swift */; };
 		280B2649297C545900A2BCB7 /* Reel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280B2648297C545900A2BCB7 /* Reel.swift */; };
+		280B264E297C57BC00A2BCB7 /* 1932834-removebg-preview.png in Resources */ = {isa = PBXBuildFile; fileRef = 280B264B297C57BC00A2BCB7 /* 1932834-removebg-preview.png */; };
+		280B264F297C57BC00A2BCB7 /* 2082951-removebg-preview.png in Resources */ = {isa = PBXBuildFile; fileRef = 280B264C297C57BC00A2BCB7 /* 2082951-removebg-preview.png */; };
+		280B2650297C57BC00A2BCB7 /* Grapes-clipart-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 280B264D297C57BC00A2BCB7 /* Grapes-clipart-3.png */; };
+		280B2652297C5B7700A2BCB7 /* tiny cherry.png in Resources */ = {isa = PBXBuildFile; fileRef = 280B2651297C5B7700A2BCB7 /* tiny cherry.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +37,10 @@
 		280B2643297C535E00A2BCB7 /* GameProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameProtocol.swift; sourceTree = "<group>"; };
 		280B2645297C537B00A2BCB7 /* GameObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameObject.swift; sourceTree = "<group>"; };
 		280B2648297C545900A2BCB7 /* Reel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reel.swift; sourceTree = "<group>"; };
+		280B264B297C57BC00A2BCB7 /* 1932834-removebg-preview.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1932834-removebg-preview.png"; sourceTree = "<group>"; };
+		280B264C297C57BC00A2BCB7 /* 2082951-removebg-preview.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2082951-removebg-preview.png"; sourceTree = "<group>"; };
+		280B264D297C57BC00A2BCB7 /* Grapes-clipart-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Grapes-clipart-3.png"; sourceTree = "<group>"; };
+		280B2651297C5B7700A2BCB7 /* tiny cherry.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tiny cherry.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +57,7 @@
 		280B261F297C515600A2BCB7 = {
 			isa = PBXGroup;
 			children = (
+				280B264A297C57BC00A2BCB7 /* Assets */,
 				280B262A297C515700A2BCB7 /* SlotMachine */,
 				280B2629297C515700A2BCB7 /* Products */,
 			);
@@ -94,6 +103,17 @@
 				280B2648297C545900A2BCB7 /* Reel.swift */,
 			);
 			path = GameObjects;
+			sourceTree = "<group>";
+		};
+		280B264A297C57BC00A2BCB7 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				280B2651297C5B7700A2BCB7 /* tiny cherry.png */,
+				280B264B297C57BC00A2BCB7 /* 1932834-removebg-preview.png */,
+				280B264C297C57BC00A2BCB7 /* 2082951-removebg-preview.png */,
+				280B264D297C57BC00A2BCB7 /* Grapes-clipart-3.png */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,7 +178,11 @@
 				280B262E297C515700A2BCB7 /* GameScene.sks in Resources */,
 				280B2639297C515900A2BCB7 /* Assets.xcassets in Resources */,
 				280B263C297C515900A2BCB7 /* LaunchScreen.storyboard in Resources */,
+				280B264E297C57BC00A2BCB7 /* 1932834-removebg-preview.png in Resources */,
+				280B2650297C57BC00A2BCB7 /* Grapes-clipart-3.png in Resources */,
 				280B2630297C515700A2BCB7 /* Actions.sks in Resources */,
+				280B2652297C5B7700A2BCB7 /* tiny cherry.png in Resources */,
+				280B264F297C57BC00A2BCB7 /* 2082951-removebg-preview.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

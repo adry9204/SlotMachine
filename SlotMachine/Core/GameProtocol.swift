@@ -1,5 +1,5 @@
 protocol GameProtocol{
-    func Start()
+    func Start(xPos: Double, yPos: Double)
     
     func Update()
     

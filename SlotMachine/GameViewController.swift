@@ -1,52 +1,40 @@
-//
-//  GameViewController.swift
-//  SlotMachine
-//
-//  Created by Adriana Diaz Torres on 1/21/23.
-//
-
 import UIKit
 import SpriteKit
 import GameplayKit
+import Foundation
+import UIKit
+
 
 class GameViewController: UIViewController {
 
+    @IBOutlet weak var SpinButton: UIButton!
+    
+    @IBOutlet weak var TotalAmmount: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Load 'GameScene.sks' as a GKScene. This provides gameplay related content
-        // including entities and graphs.
+        TotalAmmount.layer.cornerRadius = 12
+        TotalAmmount.layer.borderWidth = 1
+        TotalAmmount.layer.borderColor = CGColor(srgbRed: 255, green: 180, blue: 0, alpha: 1)
+
         if let scene = GKScene(fileNamed: "GameScene") {
             
-            // Get the SKScene from the loaded GKScene
             if let sceneNode = scene.rootNode as! GameScene? {
                 
-                // Copy gameplay related content over to the scene
-                sceneNode.entities = scene.entities
-                sceneNode.graphs = scene.graphs
-                
-                // Set the scale mode to scale to fit the window
                 sceneNode.scaleMode = .aspectFill
                 
-                // Present the scene
                 if let view = self.view as! SKView? {
                     view.presentScene(sceneNode)
-                    
                     view.ignoresSiblingOrder = true
                     
-                    view.showsFPS = true
-                    view.showsNodeCount = true
                 }
             }
         }
     }
 
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
-        if UIDevice.current.userInterfaceIdiom == .phone {
-            return .allButUpsideDown
-        } else {
-            return .all
-        }
+        return .portrait
     }
 
     override var prefersStatusBarHidden: Bool {

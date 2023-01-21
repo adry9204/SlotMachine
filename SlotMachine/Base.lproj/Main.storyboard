@@ -1,24 +1,151 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Game View Controller-->
         <scene sceneID="tXr-a1-R10">
             <objects>
-                <viewController id="BV1-FR-VrT" customClass="GameViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BV1-FR-VrT" customClass="GameViewController" customModule="SlotMachine" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="3se-qz-xqx" customClass="SKView">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="StT-rQ-zDq">
+                                <rect key="frame" x="30" y="742" width="90" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="oeE-Y9-2Na"/>
+                                    <constraint firstAttribute="width" constant="90" id="rhi-pW-5qJ"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="RESET" cornerStyle="large">
+                                    <fontDescription key="titleFontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="24"/>
+                                    <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                    <color key="baseForegroundColor" systemColor="systemGroupedBackgroundColor"/>
+                                    <color key="baseBackgroundColor" red="1" green="0.72156862745098038" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T7c-OB-TKI">
+                                <rect key="frame" x="106.66666666666669" y="568" width="180" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="HIL-oA-SbP"/>
+                                    <constraint firstAttribute="width" constant="180" id="oM5-5s-DwU"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="SPIN" cornerStyle="large">
+                                    <backgroundConfiguration key="background" strokeWidth="2">
+                                        <color key="strokeColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="28"/>
+                                    <color key="baseForegroundColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="baseBackgroundColor" red="0.93725490196078431" green="0.054901960784313725" blue="0.85098039215686272" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z3J-M7-exN">
+                                <rect key="frame" x="116.66666666666669" y="286" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="cgO-Az-nXC"/>
+                                    <constraint firstAttribute="height" constant="40" id="thL-g8-9AM"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="-" cornerStyle="large">
+                                    <backgroundConfiguration key="background" strokeWidth="2">
+                                        <color key="strokeColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="28"/>
+                                    <color key="baseForegroundColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="baseBackgroundColor" red="0.93725490199999995" green="0.054901960780000002" blue="0.85098039219999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DJb-6w-3Un">
+                                <rect key="frame" x="273" y="742" width="90" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="Xwb-pf-6zt"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="QUIT" cornerStyle="large">
+                                    <fontDescription key="titleFontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="24"/>
+                                    <color key="baseBackgroundColor" red="1" green="0.72156862749999995" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lag-v6-qHb">
+                                <rect key="frame" x="169.33333333333334" y="287.66666666666669" width="54.666666666666657" height="36.666666666666686"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="2" height="-1"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$ 1000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qzq-qO-c4U">
+                                <rect key="frame" x="121.66666666666669" y="151" width="150" height="50"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.054901960780000002" blue="0.85098039219999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Gws-Yr-S9x"/>
+                                    <constraint firstAttribute="width" constant="150" id="rlk-8E-lcf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="32"/>
+                                <color key="textColor" red="1" green="0.72156862749999995" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="2" height="-1"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Woz-xn-57y">
+                                <rect key="frame" x="236.66666666666663" y="286" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="Pug-qs-fUZ"/>
+                                    <constraint firstAttribute="height" constant="40" id="TtL-w0-UgW"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="+" cornerStyle="large">
+                                    <backgroundConfiguration key="background" strokeWidth="2">
+                                        <color key="strokeColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="28"/>
+                                    <color key="baseForegroundColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="baseBackgroundColor" red="0.93725490199999995" green="0.054901960780000002" blue="0.85098039219999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="4qk-I5-YsI"/>
+                        <color key="backgroundColor" systemColor="separatorColor"/>
+                        <constraints>
+                            <constraint firstItem="4qk-I5-YsI" firstAttribute="bottom" secondItem="T7c-OB-TKI" secondAttribute="bottom" constant="200" id="BG3-vl-ms5"/>
+                            <constraint firstItem="T7c-OB-TKI" firstAttribute="centerX" secondItem="3se-qz-xqx" secondAttribute="centerX" id="EvW-F2-DOi"/>
+                            <constraint firstItem="StT-rQ-zDq" firstAttribute="leading" secondItem="4qk-I5-YsI" secondAttribute="leading" constant="30" id="K6R-k2-str"/>
+                            <constraint firstItem="4qk-I5-YsI" firstAttribute="trailing" secondItem="DJb-6w-3Un" secondAttribute="trailing" constant="30" id="L3c-JC-inx"/>
+                            <constraint firstItem="Qzq-qO-c4U" firstAttribute="centerY" secondItem="3se-qz-xqx" secondAttribute="centerY" constant="-250" id="LLl-vc-2aC"/>
+                            <constraint firstItem="z3J-M7-exN" firstAttribute="centerX" secondItem="3se-qz-xqx" secondAttribute="centerX" constant="-60" id="PgX-zo-fqK"/>
+                            <constraint firstItem="lag-v6-qHb" firstAttribute="centerX" secondItem="3se-qz-xqx" secondAttribute="centerX" id="Wbr-jf-uey"/>
+                            <constraint firstItem="4qk-I5-YsI" firstAttribute="bottom" secondItem="StT-rQ-zDq" secondAttribute="bottom" constant="30" id="aak-LL-L9n"/>
+                            <constraint firstItem="Woz-xn-57y" firstAttribute="centerY" secondItem="3se-qz-xqx" secondAttribute="centerY" constant="-120" id="eyi-ai-pS2"/>
+                            <constraint firstItem="Qzq-qO-c4U" firstAttribute="centerX" secondItem="3se-qz-xqx" secondAttribute="centerX" id="iq8-Gn-JXs"/>
+                            <constraint firstItem="lag-v6-qHb" firstAttribute="centerY" secondItem="3se-qz-xqx" secondAttribute="centerY" constant="-120" id="sbC-hW-L9p"/>
+                            <constraint firstItem="Woz-xn-57y" firstAttribute="centerX" secondItem="3se-qz-xqx" secondAttribute="centerX" constant="60" id="ucQ-BN-scC"/>
+                            <constraint firstItem="z3J-M7-exN" firstAttribute="centerY" secondItem="3se-qz-xqx" secondAttribute="centerY" constant="-120" id="vNG-be-1fM"/>
+                            <constraint firstItem="4qk-I5-YsI" firstAttribute="bottom" secondItem="DJb-6w-3Un" secondAttribute="bottom" constant="30" id="yTC-6w-88t"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="SpinButton" destination="T7c-OB-TKI" id="t23-6a-MQj"/>
+                        <outlet property="TotalAmmount" destination="Qzq-qO-c4U" id="ETt-rO-kNa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-11" y="4"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="separatorColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
