@@ -17,6 +17,8 @@ class GameViewController: UIViewController {
         TotalAmmount.layer.cornerRadius = 12
         TotalAmmount.layer.borderWidth = 1
         TotalAmmount.layer.borderColor = CGColor(srgbRed: 255, green: 180, blue: 0, alpha: 1)
+        
+        
 
         if let scene = GKScene(fileNamed: "GameScene") {
             

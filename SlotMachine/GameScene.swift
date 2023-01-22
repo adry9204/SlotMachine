@@ -7,19 +7,25 @@ class GameScene: SKScene {
     var reelMiddle: Reel?
     var reelRight: Reel?
 
+    var background: Background?
     
     override func sceneDidLoad() {
         name = "SLOT"
         
-        // add ocean1 to the scene and starts it at the Reset location
-        reelLeft = Reel(xPos: -180, yPos: 0)
+        // adding reels to the scene
+        reelLeft = Reel(xPos: -200, yPos: -60)
         addChild(reelLeft!)
         
-        reelMiddle = Reel(xPos: 0, yPos: 0)
+        reelMiddle = Reel(xPos: 0, yPos: -60)
         addChild(reelMiddle!)
         
-        reelRight = Reel(xPos: 180, yPos: 0)
+        reelRight = Reel(xPos: 200, yPos: -60)
         addChild(reelRight!)
+        
+        //adding the background
+        background = Background()
+        addChild(background!)
+        
     }
     
     
