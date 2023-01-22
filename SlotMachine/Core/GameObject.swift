@@ -35,7 +35,7 @@ class GameObject : SKSpriteNode, GameProtocol
     }
     
     
-    func CheckBounds()
+    func SelectResult()
     {
         
     }

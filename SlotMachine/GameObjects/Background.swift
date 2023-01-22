@@ -22,7 +22,7 @@ class Background : GameObject{
     override func Update(){
     }
     
-    override func CheckBounds() {
+    override func SelectResult() {
         
     }
     

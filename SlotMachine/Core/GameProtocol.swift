@@ -3,7 +3,7 @@ protocol GameProtocol{
     
     func Update()
     
-    func CheckBounds()
+    func SelectResult()
     
     func Reset()
 }

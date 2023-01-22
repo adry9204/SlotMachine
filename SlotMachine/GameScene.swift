@@ -9,6 +9,10 @@ class GameScene: SKScene {
 
     var background: Background?
     
+    var fireworksTop: Fireworks?
+    var fireworksBottom: Fireworks?
+    
+    
     override func sceneDidLoad() {
         name = "SLOT"
         
@@ -26,11 +30,25 @@ class GameScene: SKScene {
         background = Background()
         addChild(background!)
         
+        //adding the hidden fireworks
+        fireworksTop = Fireworks(xPos: 0, yPos: 400)
+        addChild(fireworksTop!)
+        fireworksTop?.isHidden = true
+        
+        fireworksBottom = Fireworks(xPos: 0, yPos: -600)
+        addChild(fireworksBottom!)
+        fireworksBottom?.isHidden = true
     }
     
     
     func touchDown(atPoint pos : CGPoint) {
-      
+        if fireworksTop!.isHidden {
+            fireworksTop?.isHidden = false
+            fireworksBottom?.isHidden = false
+        } else {
+            fireworksTop?.isHidden = true
+            fireworksBottom?.isHidden = true
+        }
     }
     
     func touchMoved(toPoint pos : CGPoint) {
@@ -63,6 +81,7 @@ class GameScene: SKScene {
         reelLeft?.Update()
         reelMiddle?.Update()
         reelRight?.Update()
+        
         
     }
 }

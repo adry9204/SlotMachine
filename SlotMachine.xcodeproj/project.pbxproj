@@ -25,6 +25,10 @@
 		28C69ECC297CA26E00B48AFC /* reelBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 28C69ECB297CA26E00B48AFC /* reelBackground.png */; };
 		28C69ED0297CA64C00B48AFC /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C69ECF297CA64C00B48AFC /* Background.swift */; };
 		28E68ACA297D985D0086A90A /* b4 copy 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 28E68AC9297D985D0086A90A /* b4 copy 4.png */; };
+		28E68ACC297DA55D0086A90A /* BACKGROUND 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 28E68ACB297DA55D0086A90A /* BACKGROUND 3.png */; };
+		28E68ACE297DAC160086A90A /* Fireworks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E68ACD297DAC160086A90A /* Fireworks.swift */; };
+		28E68AD6297DAE800086A90A /* Fireworks_Transparent_Clip_Art_Image copy 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 28E68AD5297DAE800086A90A /* Fireworks_Transparent_Clip_Art_Image copy 3.png */; };
+		28E68ADA297DB0BF0086A90A /* Rectangle 20 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 28E68AD9297DB0BF0086A90A /* Rectangle 20 2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +51,10 @@
 		28C69ECB297CA26E00B48AFC /* reelBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reelBackground.png; sourceTree = "<group>"; };
 		28C69ECF297CA64C00B48AFC /* Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
 		28E68AC9297D985D0086A90A /* b4 copy 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "b4 copy 4.png"; sourceTree = "<group>"; };
+		28E68ACB297DA55D0086A90A /* BACKGROUND 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BACKGROUND 3.png"; sourceTree = "<group>"; };
+		28E68ACD297DAC160086A90A /* Fireworks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fireworks.swift; sourceTree = "<group>"; };
+		28E68AD5297DAE800086A90A /* Fireworks_Transparent_Clip_Art_Image copy 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Fireworks_Transparent_Clip_Art_Image copy 3.png"; sourceTree = "<group>"; };
+		28E68AD9297DB0BF0086A90A /* Rectangle 20 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Rectangle 20 2.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +116,7 @@
 			children = (
 				280B2648297C545900A2BCB7 /* Reel.swift */,
 				28C69ECF297CA64C00B48AFC /* Background.swift */,
+				28E68ACD297DAC160086A90A /* Fireworks.swift */,
 			);
 			path = GameObjects;
 			sourceTree = "<group>";
@@ -117,7 +126,10 @@
 			children = (
 				28C69ECB297CA26E00B48AFC /* reelBackground.png */,
 				280B2651297C5B7700A2BCB7 /* tiny cherry.png */,
+				28E68ACB297DA55D0086A90A /* BACKGROUND 3.png */,
+				28E68AD9297DB0BF0086A90A /* Rectangle 20 2.png */,
 				28E68AC9297D985D0086A90A /* b4 copy 4.png */,
+				28E68AD5297DAE800086A90A /* Fireworks_Transparent_Clip_Art_Image copy 3.png */,
 				280B264B297C57BC00A2BCB7 /* 1932834-removebg-preview.png */,
 				280B264C297C57BC00A2BCB7 /* 2082951-removebg-preview.png */,
 				280B264D297C57BC00A2BCB7 /* Grapes-clipart-3.png */,
@@ -183,14 +195,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28E68ADA297DB0BF0086A90A /* Rectangle 20 2.png in Resources */,
 				280B2637297C515700A2BCB7 /* Main.storyboard in Resources */,
 				280B262E297C515700A2BCB7 /* GameScene.sks in Resources */,
+				28E68ACC297DA55D0086A90A /* BACKGROUND 3.png in Resources */,
 				280B2639297C515900A2BCB7 /* Assets.xcassets in Resources */,
 				28E68ACA297D985D0086A90A /* b4 copy 4.png in Resources */,
 				28C69ECC297CA26E00B48AFC /* reelBackground.png in Resources */,
 				280B263C297C515900A2BCB7 /* LaunchScreen.storyboard in Resources */,
 				280B264E297C57BC00A2BCB7 /* 1932834-removebg-preview.png in Resources */,
 				280B2650297C57BC00A2BCB7 /* Grapes-clipart-3.png in Resources */,
+				28E68AD6297DAE800086A90A /* Fireworks_Transparent_Clip_Art_Image copy 3.png in Resources */,
 				280B2630297C515700A2BCB7 /* Actions.sks in Resources */,
 				280B2652297C5B7700A2BCB7 /* tiny cherry.png in Resources */,
 				280B264F297C57BC00A2BCB7 /* 2082951-removebg-preview.png in Resources */,
@@ -210,6 +225,7 @@
 				280B2644297C535E00A2BCB7 /* GameProtocol.swift in Sources */,
 				280B2634297C515700A2BCB7 /* GameViewController.swift in Sources */,
 				280B262C297C515700A2BCB7 /* AppDelegate.swift in Sources */,
+				28E68ACE297DAC160086A90A /* Fireworks.swift in Sources */,
 				280B2646297C537B00A2BCB7 /* GameObject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

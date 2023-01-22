@@ -1,11 +1,11 @@
 import GameplayKit
 import SpriteKit
 
-class Reel : GameObject
+class Fireworks : GameObject
 {
     init(xPos: Double, yPos: Double)
     {
-        super.init(imageString: "cherry", initialScale: 1.0)
+        super.init(imageString: "fireworks", initialScale: 0.5)
         Start(xPos: xPos, yPos: yPos)
     }
 
@@ -16,7 +16,7 @@ class Reel : GameObject
 
     override func Start(xPos: Double, yPos: Double)
     {
-        zPosition = 2
+        zPosition = 4
         position.y = yPos
         position.x = xPos
     }
@@ -27,8 +27,6 @@ class Reel : GameObject
     
     override func SelectResult()
     {
-        let picture = arc4random_uniform(3)
-        print(picture)
     }
     
     override func Reset()
@@ -41,4 +39,5 @@ class Reel : GameObject
     
     
 }
+
 
