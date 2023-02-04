@@ -117,8 +117,7 @@ class GameViewController: UIViewController {
             print("  ****************")
         }
         
-        globalScene.reelLeft?.isHidden = true
-        
+        updateReels()
     }
     
     @IBAction func resetButtonPressed(_ sender: UIButton) {
@@ -136,4 +135,15 @@ class GameViewController: UIViewController {
         //GET REELS TO INITIAL STATE
     }
     
+    
+    func updateReels() {
+        let leftSymbol = game.getSymbolName(symbol: game.currentDraw[0])
+        let middleSymbol = game.getSymbolName(symbol: game.currentDraw[1])
+        let rightSymbol = game.getSymbolName(symbol: game.currentDraw[2])
+        
+        globalScene.changeImage(symbolName: "grapes", pos: 0)
+        globalScene.changeImage(symbolName: "grapes", pos: 1)
+        globalScene.changeImage(symbolName: "grapes", pos: 2)
+        
+    }
 }

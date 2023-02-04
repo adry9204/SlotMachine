@@ -17,13 +17,13 @@ class GameScene: SKScene {
         name = "SLOT"
         
         // adding reels to the scene
-        reelLeft = Reel(xPos: -200, yPos: -60)
+        reelLeft = Reel(xPos: -200, yPos: -60, symbol: "cherry")
         addChild(reelLeft!)
         
-        reelMiddle = Reel(xPos: 0, yPos: -60)
+        reelMiddle = Reel(xPos: 0, yPos: -60, symbol: "cherry")
         addChild(reelMiddle!)
         
-        reelRight = Reel(xPos: 200, yPos: -60)
+        reelRight = Reel(xPos: 200, yPos: -60, symbol: "cherry")
         addChild(reelRight!)
         
         //adding the background
@@ -40,6 +40,26 @@ class GameScene: SKScene {
         fireworksBottom?.isHidden = true
     }
     
+    func changeImage(symbolName: String, pos: Int) {
+        switch pos {
+        case 0:
+            //update left reel
+            removeChildren(in: [reelLeft!])
+            reelLeft = Reel(xPos: -200, yPos: -60, symbol: symbolName)
+            addChild(reelLeft!)
+        case 1:
+            //update center
+            removeChildren(in: [reelMiddle!])
+            reelMiddle = Reel(xPos: 0, yPos: -60, symbol: symbolName)
+            addChild(reelMiddle!)
+        default:
+            //update right
+            removeChildren(in: [reelRight!])
+            reelRight = Reel(xPos: 200, yPos: -60, symbol: symbolName)
+            addChild(reelRight!)
+        }
+        
+    }
     
     func touchDown(atPoint pos : CGPoint) {
         if fireworksTop!.isHidden {
@@ -81,8 +101,7 @@ class GameScene: SKScene {
         reelLeft?.Update()
         reelMiddle?.Update()
         reelRight?.Update()
-        
-        
+                
     }
 }
 

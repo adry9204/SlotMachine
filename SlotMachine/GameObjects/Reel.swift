@@ -3,9 +3,9 @@ import SpriteKit
 
 class Reel : GameObject
 {
-    init(xPos: Double, yPos: Double)
+    init(xPos: Double, yPos: Double, symbol: String)
     {
-        super.init(imageString: "cherry", initialScale: 1.0)
+        super.init(imageString: symbol, initialScale: 1.0)
         Start(xPos: xPos, yPos: yPos)
     }
 
@@ -35,6 +35,8 @@ class Reel : GameObject
     {
         
     }
+    
+    
     
     
     

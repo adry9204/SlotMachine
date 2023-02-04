@@ -162,6 +162,27 @@ class Game {
         bells = 0
         seven = 0
     }
+    
+    func getSymbolName(symbol: ReelSymbol) -> String {
+        switch symbol {
+        case .Blank:
+            return "blank"
+        case .Grapes:
+            return "grapes"
+        case .Bananas:
+            return "bananas"
+        case .Oranges:
+            return "oranges"
+        case .Cherries:
+            return "cherry"
+        case .Bar:
+            return "bar"
+        case .Bells:
+            return "bells"
+        default:
+            return "seven"
+        }
+    }
   
 }
 

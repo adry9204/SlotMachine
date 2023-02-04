@@ -26,6 +26,7 @@
 		28C69ED0297CA64C00B48AFC /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C69ECF297CA64C00B48AFC /* Background.swift */; };
 		28DD8518298DA2AD002DB63A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DD8517298DA2AD002DB63A /* HomeViewController.swift */; };
 		28DD851A298DF270002DB63A /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DD8519298DF270002DB63A /* Game.swift */; };
+		28DD851C298E46A6002DB63A /* tiny grapes.png in Resources */ = {isa = PBXBuildFile; fileRef = 28DD851B298E46A6002DB63A /* tiny grapes.png */; };
 		28E68ACA297D985D0086A90A /* b4 copy 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 28E68AC9297D985D0086A90A /* b4 copy 4.png */; };
 		28E68ACC297DA55D0086A90A /* BACKGROUND 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 28E68ACB297DA55D0086A90A /* BACKGROUND 3.png */; };
 		28E68ACE297DAC160086A90A /* Fireworks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E68ACD297DAC160086A90A /* Fireworks.swift */; };
@@ -54,6 +55,7 @@
 		28C69ECF297CA64C00B48AFC /* Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
 		28DD8517298DA2AD002DB63A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		28DD8519298DF270002DB63A /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		28DD851B298E46A6002DB63A /* tiny grapes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tiny grapes.png"; sourceTree = "<group>"; };
 		28E68AC9297D985D0086A90A /* b4 copy 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "b4 copy 4.png"; sourceTree = "<group>"; };
 		28E68ACB297DA55D0086A90A /* BACKGROUND 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BACKGROUND 3.png"; sourceTree = "<group>"; };
 		28E68ACD297DAC160086A90A /* Fireworks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fireworks.swift; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 				28C69ECB297CA26E00B48AFC /* reelBackground.png */,
 				280B2651297C5B7700A2BCB7 /* tiny cherry.png */,
 				28E68ACB297DA55D0086A90A /* BACKGROUND 3.png */,
+				28DD851B298E46A6002DB63A /* tiny grapes.png */,
 				28E68AD9297DB0BF0086A90A /* Rectangle 20 2.png */,
 				28E68AC9297D985D0086A90A /* b4 copy 4.png */,
 				28E68AD5297DAE800086A90A /* Fireworks_Transparent_Clip_Art_Image copy 3.png */,
@@ -208,6 +211,7 @@
 				280B2639297C515900A2BCB7 /* Assets.xcassets in Resources */,
 				28E68ACA297D985D0086A90A /* b4 copy 4.png in Resources */,
 				28C69ECC297CA26E00B48AFC /* reelBackground.png in Resources */,
+				28DD851C298E46A6002DB63A /* tiny grapes.png in Resources */,
 				280B263C297C515900A2BCB7 /* LaunchScreen.storyboard in Resources */,
 				280B264E297C57BC00A2BCB7 /* 1932834-removebg-preview.png in Resources */,
 				280B2650297C57BC00A2BCB7 /* Grapes-clipart-3.png in Resources */,
