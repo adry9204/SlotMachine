@@ -135,6 +135,25 @@
                                     <action selector="resetButtonPressed:" destination="BV1-FR-VrT" eventType="touchUpInside" id="8tg-Gj-vbJ"/>
                                 </connections>
                             </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vFw-iw-AqM">
+                                <rect key="frame" x="151.66666666666666" y="682" width="90" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="Db7-O1-WBE"/>
+                                    <constraint firstAttribute="height" constant="46" id="OXj-PW-nhD"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="46" id="k9R-eA-mwC"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="90" id="v3Y-EE-nIV"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="GOT IT" cornerStyle="large">
+                                    <fontDescription key="titleFontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="24"/>
+                                    <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                    <color key="baseForegroundColor" systemColor="systemGroupedBackgroundColor"/>
+                                    <color key="baseBackgroundColor" red="1" green="0.72156862749999995" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="gotItButtonPressed:" destination="BV1-FR-VrT" eventType="touchUpInside" id="Xir-zW-Occ"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T7c-OB-TKI">
                                 <rect key="frame" x="106.66666666666669" y="568" width="180" height="50"/>
                                 <constraints>
@@ -194,6 +213,17 @@
                                 <nil key="highlightedColor"/>
                                 <size key="shadowOffset" width="2" height="-1"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JackPot: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pWa-61-T3Y">
+                                <rect key="frame" x="20" y="654" width="112" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="112" id="79f-tI-4NH"/>
+                                    <constraint firstAttribute="height" constant="37" id="eTC-QU-QIS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="2" height="-1"/>
+                            </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$ 1000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qzq-qO-c4U">
                                 <rect key="frame" x="121.66666666666669" y="151" width="150" height="50"/>
                                 <color key="backgroundColor" red="0.93725490199999995" green="0.054901960780000002" blue="0.85098039219999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -241,30 +271,25 @@
                                 <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <size key="shadowOffset" width="2" height="-1"/>
                             </label>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vFw-iw-AqM">
-                                <rect key="frame" x="151.66666666666666" y="682" width="90" height="46"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$ 1000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fe9-e1-L75">
+                                <rect key="frame" x="140" y="654" width="112" height="37"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="90" id="Db7-O1-WBE"/>
-                                    <constraint firstAttribute="height" constant="46" id="OXj-PW-nhD"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="46" id="k9R-eA-mwC"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="90" id="v3Y-EE-nIV"/>
+                                    <constraint firstAttribute="width" constant="112" id="0jS-fM-2Q7"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="37" id="8ef-O8-c9f"/>
+                                    <constraint firstAttribute="height" constant="37" id="omv-ut-kb2"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="88" id="pay-XH-R32"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="GOT IT" cornerStyle="large">
-                                    <fontDescription key="titleFontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="24"/>
-                                    <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
-                                    <color key="baseForegroundColor" systemColor="systemGroupedBackgroundColor"/>
-                                    <color key="baseBackgroundColor" red="1" green="0.72156862749999995" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="gotItButtonPressed:" destination="BV1-FR-VrT" eventType="touchUpInside" id="Xir-zW-Occ"/>
-                                </connections>
-                            </button>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="2" height="-1"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4qk-I5-YsI"/>
                         <color key="backgroundColor" red="0.44694149490000001" green="0.088004700840000005" blue="0.43139505389999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <color key="tintColor" red="0.44694149490000001" green="0.088004700840000005" blue="0.43139505389999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
+                            <constraint firstItem="pWa-61-T3Y" firstAttribute="top" secondItem="qMH-xf-BAu" secondAttribute="bottom" constant="22" id="82Z-4D-jID"/>
                             <constraint firstItem="4qk-I5-YsI" firstAttribute="bottom" secondItem="T7c-OB-TKI" secondAttribute="bottom" constant="200" id="BG3-vl-ms5"/>
                             <constraint firstItem="qMH-xf-BAu" firstAttribute="centerX" secondItem="3se-qz-xqx" secondAttribute="centerX" id="CBO-z9-70F"/>
                             <constraint firstItem="T7c-OB-TKI" firstAttribute="centerX" secondItem="3se-qz-xqx" secondAttribute="centerX" id="EvW-F2-DOi"/>
@@ -274,10 +299,13 @@
                             <constraint firstItem="z3J-M7-exN" firstAttribute="centerX" secondItem="3se-qz-xqx" secondAttribute="centerX" constant="-60" id="PgX-zo-fqK"/>
                             <constraint firstItem="jDn-xx-RMS" firstAttribute="centerX" secondItem="3se-qz-xqx" secondAttribute="centerX" id="RB8-Aa-Scw"/>
                             <constraint firstItem="lag-v6-qHb" firstAttribute="centerX" secondItem="3se-qz-xqx" secondAttribute="centerX" id="Wbr-jf-uey"/>
+                            <constraint firstItem="Fe9-e1-L75" firstAttribute="leading" secondItem="pWa-61-T3Y" secondAttribute="trailing" constant="8" symbolic="YES" id="Yy0-qn-eKz"/>
                             <constraint firstItem="4qk-I5-YsI" firstAttribute="bottom" secondItem="StT-rQ-zDq" secondAttribute="bottom" constant="30" id="aak-LL-L9n"/>
+                            <constraint firstItem="pWa-61-T3Y" firstAttribute="leading" secondItem="4qk-I5-YsI" secondAttribute="leading" constant="20" id="bWL-h6-KvW"/>
                             <constraint firstItem="qMH-xf-BAu" firstAttribute="centerY" secondItem="3se-qz-xqx" secondAttribute="centerY" constant="160" id="bsb-RR-bQL"/>
                             <constraint firstItem="Woz-xn-57y" firstAttribute="centerY" secondItem="3se-qz-xqx" secondAttribute="centerY" constant="-136" id="eyi-ai-pS2"/>
                             <constraint firstItem="Qzq-qO-c4U" firstAttribute="centerX" secondItem="3se-qz-xqx" secondAttribute="centerX" id="iq8-Gn-JXs"/>
+                            <constraint firstItem="Fe9-e1-L75" firstAttribute="top" secondItem="qMH-xf-BAu" secondAttribute="bottom" constant="22" id="lci-rY-Mzk"/>
                             <constraint firstItem="vFw-iw-AqM" firstAttribute="top" secondItem="jDn-xx-RMS" secondAttribute="bottom" constant="16" id="qav-Ao-SbQ"/>
                             <constraint firstItem="vFw-iw-AqM" firstAttribute="centerX" secondItem="3se-qz-xqx" secondAttribute="centerX" id="qsN-M1-4Vi"/>
                             <constraint firstItem="jDn-xx-RMS" firstAttribute="centerY" secondItem="3se-qz-xqx" secondAttribute="centerY" constant="70" id="r1d-ln-j7X"/>
@@ -291,6 +319,7 @@
                     <connections>
                         <outlet property="JackPotAmmount" destination="qMH-xf-BAu" id="as7-ej-bzV"/>
                         <outlet property="JackPotImage" destination="jDn-xx-RMS" id="PM6-Vh-SRP"/>
+                        <outlet property="JackPotLabel" destination="Fe9-e1-L75" id="QCc-ow-DAa"/>
                         <outlet property="SpinButton" destination="T7c-OB-TKI" id="t23-6a-MQj"/>
                         <outlet property="TotalAmmount" destination="Qzq-qO-c4U" id="ETt-rO-kNa"/>
                         <outlet property="currentBetLabel" destination="lag-v6-qHb" id="s7u-cA-0NK"/>

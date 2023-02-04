@@ -26,6 +26,7 @@ class GameViewController: UIViewController {
     //main game items
     @IBOutlet weak var TotalAmmount: UILabel!
     @IBOutlet weak var currentBetLabel: UILabel!
+    @IBOutlet weak var JackPotLabel: UILabel!
     
     //local variables
     var game: Game = Game(availableAmount: 0, currentBet: 10)
@@ -99,8 +100,6 @@ class GameViewController: UIViewController {
             JackPotAmmount.text = String(game.jackPot)
             JackPotAmmount.isHidden = false
             gotItButton.isHidden = false
-            
-            
         } else {
             
             TotalAmmount.text = "$ " + String(game.availableAmount)
@@ -116,14 +115,29 @@ class GameViewController: UIViewController {
             print(game.availableAmount)
             print("  ****************")
         }
+        //updating the JackPot
+        JackPotLabel.text = "$ " + String(game.jackPot)
         
         updateReels()
+        //checking if the player ran out of money
+        if(game.availableAmount == 0) {
+            SpinButton.isEnabled = false
+        }
     }
     
     @IBAction func resetButtonPressed(_ sender: UIButton) {
-        game = Game(availableAmount: initialAmount, currentBet: 10)
+        //reseting logic
+        game.availableAmount = initialAmount
+        game.resetLocalVariables()
+        game.currentBet = 10
+        game.wonJackPot = false
+        game.currentDraw = [.Blank, .Blank, .Blank]
+        
+        //reseting UI
         currentBetLabel.text = "10"
         TotalAmmount.text = "$ " + String(game.availableAmount)
+        SpinButton.isEnabled = true
+        
     }
     
     @IBAction func gotItButtonPressed(_ sender: UIButton) {
@@ -141,9 +155,9 @@ class GameViewController: UIViewController {
         let middleSymbol = game.getSymbolName(symbol: game.currentDraw[1])
         let rightSymbol = game.getSymbolName(symbol: game.currentDraw[2])
         
-        globalScene.changeImage(symbolName: "grapes", pos: 0)
-        globalScene.changeImage(symbolName: "grapes", pos: 1)
-        globalScene.changeImage(symbolName: "grapes", pos: 2)
+        globalScene.changeImage(symbolName: leftSymbol, pos: 0)
+        globalScene.changeImage(symbolName: middleSymbol, pos: 1)
+        globalScene.changeImage(symbolName: rightSymbol, pos: 2)
         
     }
 }

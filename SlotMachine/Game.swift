@@ -10,7 +10,6 @@ import Foundation
 class Game {
     var availableAmount: Int
     var currentBet: Int
-    var gain : Int
     var currentDraw : [ReelSymbol]
     
     var jackPot: Int
@@ -23,7 +22,7 @@ class Game {
     private var bananas: Int
     private var oranges: Int
     private var cherries: Int
-    private var bars: Int
+    private var strawberry: Int
     private var bells: Int
     private var seven: Int
     
@@ -31,7 +30,6 @@ class Game {
         self.availableAmount = availableAmount
         self.currentBet = currentBet
         jackPot = 1000
-        gain = 0
         currentDraw = [.Blank, .Blank, .Blank]
         wonJackPot = false
         
@@ -41,7 +39,7 @@ class Game {
         bananas = 0
         oranges = 0
         cherries = 0
-        bars = 0
+        strawberry = 0
         bells = 0
         seven = 0
 
@@ -77,8 +75,8 @@ class Game {
                     currentDraw[reel] = .Cherries
                     cherries += 1
                 case 60..<63:
-                    currentDraw[reel] = .Bar
-                    bars += 1
+                    currentDraw[reel] = .Strawberry
+                    strawberry += 1
                 case 63..<65:
                     currentDraw[reel] = .Bells
                     bells += 1
@@ -121,7 +119,7 @@ class Game {
                 availableAmount += currentBet * 30
             } else if(cherries == 3){
                 availableAmount += currentBet * 40
-            } else if(bars == 3){
+            } else if(strawberry == 3){
                 availableAmount += currentBet * 50
             } else if(bells == 3){
                 availableAmount += currentBet * 75
@@ -135,7 +133,7 @@ class Game {
                 availableAmount += currentBet * 3
             } else if(cherries == 2){
                 availableAmount += currentBet * 4
-            } else if(bars == 2){
+            } else if(strawberry == 2){
                 availableAmount += currentBet * 5
             } else if(bells == 2){
                 availableAmount += currentBet * 10
@@ -158,7 +156,7 @@ class Game {
         bananas = 0
         oranges = 0
         cherries = 0
-        bars = 0
+        strawberry = 0
         bells = 0
         seven = 0
     }
@@ -172,13 +170,13 @@ class Game {
         case .Bananas:
             return "bananas"
         case .Oranges:
-            return "oranges"
+            return "orange"
         case .Cherries:
             return "cherry"
-        case .Bar:
-            return "bar"
+        case .Strawberry:
+            return "strawberry"
         case .Bells:
-            return "bells"
+            return "bell"
         default:
             return "seven"
         }
@@ -196,7 +194,7 @@ enum ReelSymbol {
     case Bananas;
     case Oranges;
     case Cherries;
-    case Bar;
+    case Strawberry;
     case Bells;
     case Seven;
 }

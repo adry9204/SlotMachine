@@ -18,19 +18,6 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         
-        let game = Game(availableAmount: 100, currentBet: 10)
-        /*
-        while game.availableAmount != 0 {
-            game.spin()
-            for reel in 0...2 {
-                print(game.currentDraw[reel])
-            }
-            print(game.availableAmount)
-            print("****************")
-        }
-        */
-        
-        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

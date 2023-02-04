@@ -27,6 +27,12 @@
 		28DD8518298DA2AD002DB63A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DD8517298DA2AD002DB63A /* HomeViewController.swift */; };
 		28DD851A298DF270002DB63A /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DD8519298DF270002DB63A /* Game.swift */; };
 		28DD851C298E46A6002DB63A /* tiny grapes.png in Resources */ = {isa = PBXBuildFile; fileRef = 28DD851B298E46A6002DB63A /* tiny grapes.png */; };
+		28DD8520298E5BD3002DB63A /* bananas.png in Resources */ = {isa = PBXBuildFile; fileRef = 28DD851F298E5BD3002DB63A /* bananas.png */; };
+		28DD8524298E5D31002DB63A /* orange.png in Resources */ = {isa = PBXBuildFile; fileRef = 28DD8523298E5D31002DB63A /* orange.png */; };
+		28DD8526298E5DF1002DB63A /* strawberry.png in Resources */ = {isa = PBXBuildFile; fileRef = 28DD8525298E5DF1002DB63A /* strawberry.png */; };
+		28DD8528298E5EE2002DB63A /* bell.png in Resources */ = {isa = PBXBuildFile; fileRef = 28DD8527298E5EE2002DB63A /* bell.png */; };
+		28DD852A298E5FD7002DB63A /* seven.png in Resources */ = {isa = PBXBuildFile; fileRef = 28DD8529298E5FD7002DB63A /* seven.png */; };
+		28DD852E298E63B2002DB63A /* blank.png in Resources */ = {isa = PBXBuildFile; fileRef = 28DD852D298E63B2002DB63A /* blank.png */; };
 		28E68ACA297D985D0086A90A /* b4 copy 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 28E68AC9297D985D0086A90A /* b4 copy 4.png */; };
 		28E68ACC297DA55D0086A90A /* BACKGROUND 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 28E68ACB297DA55D0086A90A /* BACKGROUND 3.png */; };
 		28E68ACE297DAC160086A90A /* Fireworks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E68ACD297DAC160086A90A /* Fireworks.swift */; };
@@ -56,6 +62,12 @@
 		28DD8517298DA2AD002DB63A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		28DD8519298DF270002DB63A /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		28DD851B298E46A6002DB63A /* tiny grapes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tiny grapes.png"; sourceTree = "<group>"; };
+		28DD851F298E5BD3002DB63A /* bananas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bananas.png; sourceTree = "<group>"; };
+		28DD8523298E5D31002DB63A /* orange.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = orange.png; sourceTree = "<group>"; };
+		28DD8525298E5DF1002DB63A /* strawberry.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = strawberry.png; sourceTree = "<group>"; };
+		28DD8527298E5EE2002DB63A /* bell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bell.png; sourceTree = "<group>"; };
+		28DD8529298E5FD7002DB63A /* seven.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = seven.png; sourceTree = "<group>"; };
+		28DD852D298E63B2002DB63A /* blank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blank.png; sourceTree = "<group>"; };
 		28E68AC9297D985D0086A90A /* b4 copy 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "b4 copy 4.png"; sourceTree = "<group>"; };
 		28E68ACB297DA55D0086A90A /* BACKGROUND 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BACKGROUND 3.png"; sourceTree = "<group>"; };
 		28E68ACD297DAC160086A90A /* Fireworks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fireworks.swift; sourceTree = "<group>"; };
@@ -133,8 +145,14 @@
 			isa = PBXGroup;
 			children = (
 				28C69ECB297CA26E00B48AFC /* reelBackground.png */,
+				28DD851F298E5BD3002DB63A /* bananas.png */,
 				280B2651297C5B7700A2BCB7 /* tiny cherry.png */,
+				28DD852D298E63B2002DB63A /* blank.png */,
 				28E68ACB297DA55D0086A90A /* BACKGROUND 3.png */,
+				28DD8525298E5DF1002DB63A /* strawberry.png */,
+				28DD8529298E5FD7002DB63A /* seven.png */,
+				28DD8523298E5D31002DB63A /* orange.png */,
+				28DD8527298E5EE2002DB63A /* bell.png */,
 				28DD851B298E46A6002DB63A /* tiny grapes.png */,
 				28E68AD9297DB0BF0086A90A /* Rectangle 20 2.png */,
 				28E68AC9297D985D0086A90A /* b4 copy 4.png */,
@@ -204,18 +222,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28DD8524298E5D31002DB63A /* orange.png in Resources */,
 				28E68ADA297DB0BF0086A90A /* Rectangle 20 2.png in Resources */,
 				280B2637297C515700A2BCB7 /* Main.storyboard in Resources */,
+				28DD8520298E5BD3002DB63A /* bananas.png in Resources */,
 				280B262E297C515700A2BCB7 /* GameScene.sks in Resources */,
+				28DD852E298E63B2002DB63A /* blank.png in Resources */,
 				28E68ACC297DA55D0086A90A /* BACKGROUND 3.png in Resources */,
 				280B2639297C515900A2BCB7 /* Assets.xcassets in Resources */,
 				28E68ACA297D985D0086A90A /* b4 copy 4.png in Resources */,
 				28C69ECC297CA26E00B48AFC /* reelBackground.png in Resources */,
+				28DD852A298E5FD7002DB63A /* seven.png in Resources */,
 				28DD851C298E46A6002DB63A /* tiny grapes.png in Resources */,
 				280B263C297C515900A2BCB7 /* LaunchScreen.storyboard in Resources */,
 				280B264E297C57BC00A2BCB7 /* 1932834-removebg-preview.png in Resources */,
+				28DD8528298E5EE2002DB63A /* bell.png in Resources */,
 				280B2650297C57BC00A2BCB7 /* Grapes-clipart-3.png in Resources */,
 				28E68AD6297DAE800086A90A /* Fireworks_Transparent_Clip_Art_Image copy 3.png in Resources */,
+				28DD8526298E5DF1002DB63A /* strawberry.png in Resources */,
 				280B2630297C515700A2BCB7 /* Actions.sks in Resources */,
 				280B2652297C5B7700A2BCB7 /* tiny cherry.png in Resources */,
 				280B264F297C57BC00A2BCB7 /* 2082951-removebg-preview.png in Resources */,
