@@ -14,17 +14,18 @@ class Game {
     var currentDraw : [ReelSymbol]
     
     var jackPot: Int
+    var wonJackPot: Bool
     
     
     //internal variables
-    private var blanks = 0
-    private var grapes = 0
-    private var bananas = 0
-    private var oranges = 0
-    private var cherries = 0
-    private var bars = 0
-    private var bells = 0
-    private var seven = 0
+    private var blanks: Int
+    private var grapes: Int
+    private var bananas: Int
+    private var oranges: Int
+    private var cherries: Int
+    private var bars: Int
+    private var bells: Int
+    private var seven: Int
     
     init(availableAmount: Int, currentBet: Int) {
         self.availableAmount = availableAmount
@@ -32,10 +33,9 @@ class Game {
         jackPot = 1000
         gain = 0
         currentDraw = [.Blank, .Blank, .Blank]
-    }
-    
-    
-    func spin(){
+        wonJackPot = false
+        
+        //initializing local variables
         blanks = 0
         grapes = 0
         bananas = 0
@@ -44,12 +44,18 @@ class Game {
         bars = 0
         bells = 0
         seven = 0
+
+    }
+    
+    
+    func spin(){
+        resetLocalVariables()
         
         //updateing the current values
         availableAmount -= currentBet
+        checkForJackPot()
         
-        
-        if (!checkForJackPot()) {
+        if (!wonJackPot) {
             
             for reel in 0...2 {
                 let draw = floor(drand48() * 65 + 1)
@@ -84,26 +90,24 @@ class Game {
             }
             
             calculateWinnings()
-        } else {
-            currentDraw = [.Blank, .Blank, .Blank]
         }
     }
     
-    func checkForJackPot() -> Bool {
+    func checkForJackPot(){
         
         //check if two random numbers are the same
         let jackPotTry = floor(drand48() * 51 + 1)
         let jackPotWin = floor(drand48() * 51 + 1)
         
-        if(jackPotTry == jackPotWin){
+        if(jackPotWin == jackPotTry){
             print("You Won the $ " + String(jackPot) + " JackPot!")
             availableAmount += jackPot
             availableAmount += currentBet
             jackPot = 1000
-            return true
+            resetLocalVariables()
+            currentDraw = [.Blank, .Blank, .Blank]
+            wonJackPot = true
         }
-        
-       return false
     }
     
     func calculateWinnings() {
@@ -142,9 +146,23 @@ class Game {
             } else {
                 availableAmount += currentBet
             }
+        } else {
+            jackPot += currentBet
         }
         
     }
+    
+    func resetLocalVariables() {
+        blanks = 0
+        grapes = 0
+        bananas = 0
+        oranges = 0
+        cherries = 0
+        bars = 0
+        bells = 0
+        seven = 0
+    }
+  
 }
 
 

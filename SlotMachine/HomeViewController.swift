@@ -19,6 +19,7 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         
         let game = Game(availableAmount: 100, currentBet: 10)
+        /*
         while game.availableAmount != 0 {
             game.spin()
             for reel in 0...2 {
@@ -27,7 +28,7 @@ class HomeViewController: UIViewController {
             print(game.availableAmount)
             print("****************")
         }
-        
+        */
         
         
     }
@@ -42,6 +43,8 @@ class HomeViewController: UIViewController {
         let destinationVC = segue.destination as! GameViewController
         destinationVC.game.availableAmount = Int(amount)!
     }
+    
+    
     
     @IBAction func onTextChange(_ sender: UITextField) {
        
@@ -58,10 +61,10 @@ class HomeViewController: UIViewController {
         //to activate or desactivate the START button
         let amount = amountTextField.text ?? ""
         
-        if(amount.count == 0){
-            startButton.isEnabled = false
-        } else {
+        if(amount.count != 0 && Int(amount)! >= 10){
             startButton.isEnabled = true
+        } else {
+            startButton.isEnabled = false
         }
         
     }

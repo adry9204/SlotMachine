@@ -17,6 +17,7 @@ class GameViewController: UIViewController {
 
     //action items
     @IBOutlet weak var SpinButton: UIButton!
+    @IBOutlet weak var gotItButton: UIButton!
     
     //JackPot items
     @IBOutlet weak var JackPotImage: UIImageView!
@@ -26,16 +27,19 @@ class GameViewController: UIViewController {
     @IBOutlet weak var TotalAmmount: UILabel!
     @IBOutlet weak var currentBetLabel: UILabel!
     
-    
+    //local variables
     var game: Game = Game(availableAmount: 0, currentBet: 10)
+    var initialAmount = 0
+    
+    //Sprite Kit
+    var globalScene = GameScene()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        initialAmount = game.availableAmount
         //Initializing UI
         TotalAmmount.text = "$ " + String(game.availableAmount)
-        
-        
         TotalAmmount.layer.cornerRadius = 12
         TotalAmmount.layer.borderWidth = 1
         TotalAmmount.layer.borderColor = CGColor(srgbRed: 255, green: 180, blue: 0, alpha: 1)
@@ -54,20 +58,14 @@ class GameViewController: UIViewController {
                     view.ignoresSiblingOrder = true
                     
                 }
+                
+                globalScene = sceneNode
             }
-        }
-    }
-
-    @IBAction func ShowHideJackPot(_ sender: Any) {
-        if JackPotImage.isHidden {
-            JackPotImage.isHidden = false
-            JackPotAmmount.isHidden = false
-        } else {
-            JackPotImage.isHidden = true
-            JackPotAmmount.isHidden = true
         }
         
     }
+
+   
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
         return .portrait
     }
@@ -94,18 +92,48 @@ class GameViewController: UIViewController {
     
     @IBAction func spinButtonPressed(_ sender: UIButton) {
         game.spin()
-        TotalAmmount.text = "$ " + String(game.availableAmount)
         
-        if(game.currentBet > game.availableAmount){
-            game.currentBet = game.availableAmount
-            currentBetLabel.text = String(game.currentBet)
+        //check for JackPot
+        if(game.wonJackPot){
+            JackPotImage.isHidden = false
+            JackPotAmmount.text = String(game.jackPot)
+            JackPotAmmount.isHidden = false
+            gotItButton.isHidden = false
+            
+            
+        } else {
+            
+            TotalAmmount.text = "$ " + String(game.availableAmount)
+            
+            if(game.currentBet > game.availableAmount){
+                game.currentBet = game.availableAmount
+                currentBetLabel.text = String(game.currentBet)
+            }
+            
+            print(game.currentDraw[0])
+            print(game.currentDraw[1])
+            print(game.currentDraw[2])
+            print(game.availableAmount)
+            print("  ****************")
         }
         
-        print(game.currentDraw[0])
-        print(game.currentDraw[1])
-        print(game.currentDraw[2])
-        print(game.availableAmount)
-        print("  ****************")
+        globalScene.reelLeft?.isHidden = true
         
     }
+    
+    @IBAction func resetButtonPressed(_ sender: UIButton) {
+        game = Game(availableAmount: initialAmount, currentBet: 10)
+        currentBetLabel.text = "10"
+        TotalAmmount.text = "$ " + String(game.availableAmount)
+    }
+    
+    @IBAction func gotItButtonPressed(_ sender: UIButton) {
+        JackPotImage.isHidden = true
+        JackPotAmmount.isHidden = true
+        gotItButton.isHidden = true
+        
+        TotalAmmount.text = "$ " + String(game.availableAmount)
+        //GET REELS TO INITIAL STATE
+    }
+    
 }
