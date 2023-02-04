@@ -15,18 +15,27 @@ import UIKit
 
 class GameViewController: UIViewController {
 
+    //action items
     @IBOutlet weak var SpinButton: UIButton!
+    
+    //JackPot items
     @IBOutlet weak var JackPotImage: UIImageView!
-    
     @IBOutlet weak var JackPotAmmount: UILabel!
-    @IBOutlet weak var TotalAmmount: UILabel!
     
-    var a : String = "Nothing"
+    //main game items
+    @IBOutlet weak var TotalAmmount: UILabel!
+    @IBOutlet weak var currentBetLabel: UILabel!
+    
+    
+    var game: Game = Game(availableAmount: 0, currentBet: 10)
     
     override func viewDidLoad() {
         super.viewDidLoad()
-                
-        print(a)
+        
+        //Initializing UI
+        TotalAmmount.text = "$ " + String(game.availableAmount)
+        
+        
         TotalAmmount.layer.cornerRadius = 12
         TotalAmmount.layer.borderWidth = 1
         TotalAmmount.layer.borderColor = CGColor(srgbRed: 255, green: 180, blue: 0, alpha: 1)
@@ -66,7 +75,37 @@ class GameViewController: UIViewController {
     override var prefersStatusBarHidden: Bool {
         return true
     }
-    @IBAction func quitButtonPressed(_ sender: UIButton) {
+ 
+    @IBAction func plusButtonPressed(_ sender: UIButton) {
+        //checking if the bet is valid
+        if(game.currentBet + 5 <= game.availableAmount){
+            game.currentBet += 5
+            currentBetLabel.text = String(game.currentBet)
+        }
+    }
+    
+    @IBAction func minusButtonPressed(_ sender: UIButton) {
+        //checking if the bet is valid
+        if(game.currentBet - 5 > 0){
+            game.currentBet -= 5
+            currentBetLabel.text = String(game.currentBet)
+        }
+    }
+    
+    @IBAction func spinButtonPressed(_ sender: UIButton) {
+        game.spin()
+        TotalAmmount.text = "$ " + String(game.availableAmount)
+        
+        if(game.currentBet > game.availableAmount){
+            game.currentBet = game.availableAmount
+            currentBetLabel.text = String(game.currentBet)
+        }
+        
+        print(game.currentDraw[0])
+        print(game.currentDraw[1])
+        print(game.currentDraw[2])
+        print(game.availableAmount)
+        print("  ****************")
         
     }
 }

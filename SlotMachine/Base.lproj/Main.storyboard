@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qvy-vZ-h0j">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qvy-vZ-h0j">
                                 <rect key="frame" x="148" y="576" width="104" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
@@ -103,6 +103,7 @@
                     <navigationItem key="navigationItem" id="nQb-9D-dgd"/>
                     <connections>
                         <outlet property="amountTextField" destination="Y1L-Zj-9Sr" id="4XQ-Ro-Dwf"/>
+                        <outlet property="startButton" destination="Qvy-vZ-h0j" id="9X0-mx-77I"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z2p-yg-EGx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -149,6 +150,9 @@
                                     <color key="baseForegroundColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="baseBackgroundColor" red="0.93725490196078431" green="0.054901960784313725" blue="0.85098039215686272" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="spinButtonPressed:" destination="BV1-FR-VrT" eventType="touchUpInside" id="QmT-iK-n7f"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z3J-M7-exN">
                                 <rect key="frame" x="116.66666666666669" y="270" width="40" height="40"/>
@@ -165,6 +169,9 @@
                                     <color key="baseForegroundColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="baseBackgroundColor" red="0.93725490199999995" green="0.054901960780000002" blue="0.85098039219999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="minusButtonPressed:" destination="BV1-FR-VrT" eventType="touchUpInside" id="jGw-uA-dXC"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DJb-6w-3Un">
                                 <rect key="frame" x="273" y="742" width="90" height="46"/>
@@ -180,8 +187,8 @@
                                     <segue destination="cHq-OO-1qJ" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="VEa-WY-9zT"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lag-v6-qHb">
-                                <rect key="frame" x="169.33333333333334" y="271.66666666666669" width="54.666666666666657" height="36.666666666666686"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lag-v6-qHb">
+                                <rect key="frame" x="178.33333333333334" y="271.66666666666669" width="36.666666666666657" height="37"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="28"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -215,6 +222,9 @@
                                     <color key="baseForegroundColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="baseBackgroundColor" red="0.93725490199999995" green="0.054901960780000002" blue="0.85098039219999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="plusButtonPressed:" destination="BV1-FR-VrT" eventType="touchUpInside" id="cPJ-cK-Voi"/>
+                                </connections>
                             </button>
                             <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jackpot" translatesAutoresizingMaskIntoConstraints="NO" id="jDn-xx-RMS">
                                 <rect key="frame" x="-3.6666666666666572" y="326" width="400.33333333333326" height="340"/>
@@ -262,6 +272,7 @@
                         <outlet property="JackPotImage" destination="jDn-xx-RMS" id="PM6-Vh-SRP"/>
                         <outlet property="SpinButton" destination="T7c-OB-TKI" id="t23-6a-MQj"/>
                         <outlet property="TotalAmmount" destination="Qzq-qO-c4U" id="ETt-rO-kNa"/>
+                        <outlet property="currentBetLabel" destination="lag-v6-qHb" id="s7u-cA-0NK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
