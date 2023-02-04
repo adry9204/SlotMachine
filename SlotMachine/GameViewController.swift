@@ -21,9 +21,12 @@ class GameViewController: UIViewController {
     @IBOutlet weak var JackPotAmmount: UILabel!
     @IBOutlet weak var TotalAmmount: UILabel!
     
+    var a : String = "Nothing"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+                
+        print(a)
         TotalAmmount.layer.cornerRadius = 12
         TotalAmmount.layer.borderWidth = 1
         TotalAmmount.layer.borderColor = CGColor(srgbRed: 255, green: 180, blue: 0, alpha: 1)
@@ -62,5 +65,8 @@ class GameViewController: UIViewController {
 
     override var prefersStatusBarHidden: Bool {
         return true
+    }
+    @IBAction func quitButtonPressed(_ sender: UIButton) {
+        
     }
 }

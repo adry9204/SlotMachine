@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cHq-OO-1qJ">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
@@ -8,6 +8,107 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="EfR-rM-4aF">
+            <objects>
+                <viewController id="cHq-OO-1qJ" customClass="HomeViewController" customModule="SlotMachine" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SgQ-tx-F49" customClass="home">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qvy-vZ-h0j">
+                                <rect key="frame" x="148" y="576" width="104" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="START" cornerStyle="large">
+                                    <fontDescription key="titleFontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="28"/>
+                                    <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                    <color key="baseForegroundColor" red="1" green="0.72156862749999995" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="baseBackgroundColor" red="0.93725490199999995" green="0.054901960780000002" blue="0.85098039219999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="BV1-FR-VrT" kind="presentation" identifier="homeSegue" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="7Th-UP-cDu"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter amount..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Y1L-Zj-9Sr">
+                                <rect key="frame" x="136.66666666666666" y="464.66666666666669" width="119.99999999999997" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="cUP-dC-sBN"/>
+                                    <constraint firstAttribute="width" constant="120" id="dMa-PN-Wzq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" keyboardAppearance="alert"/>
+                                <connections>
+                                    <action selector="onTextChange:" destination="cHq-OO-1qJ" eventType="editingChanged" id="db8-el-UmQ"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to our" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="80R-7N-4Z9">
+                                <rect key="frame" x="102" y="127.66666666666669" width="189" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="8cq-ef-lOH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="28"/>
+                                <color key="textColor" red="1" green="0.72156862749999995" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Initial Amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4AJ-3c-8N9">
+                                <rect key="frame" x="107.00000000000001" y="407.66666666666669" width="179.33333333333337" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="YTs-7H-kjm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="28"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SLOT MACHINE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f2v-D4-seN">
+                                <rect key="frame" x="21.666666666666657" y="193.66666666666666" width="350" height="64.999999999999972"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.054901960780000002" blue="0.85098039219999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="1" green="0.72156862749999995" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="Wvb-2S-AqS"/>
+                                    <constraint firstAttribute="width" constant="350" id="sSQ-Bp-RQh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="50"/>
+                                <color key="textColor" red="1" green="0.72156862749999995" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="2" height="-1"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fYd-jB-qyW">
+                                <rect key="frame" x="116.66666666666667" y="454.66666666666669" width="12.000000000000014" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="12" id="1wE-GT-9YA"/>
+                                    <constraint firstAttribute="height" constant="52" id="e8J-nM-7Fg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="40"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="NsD-Ut-eBr"/>
+                        <color key="backgroundColor" red="0.44694149490000001" green="0.088004700840000005" blue="0.43139505389999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="Y1L-Zj-9Sr" firstAttribute="centerX" secondItem="SgQ-tx-F49" secondAttribute="centerX" id="6w8-Cs-tdK"/>
+                            <constraint firstItem="4AJ-3c-8N9" firstAttribute="centerY" secondItem="SgQ-tx-F49" secondAttribute="centerY" id="7Ul-MU-vba"/>
+                            <constraint firstItem="Y1L-Zj-9Sr" firstAttribute="leading" secondItem="fYd-jB-qyW" secondAttribute="trailing" constant="8" id="7bM-01-ifF"/>
+                            <constraint firstItem="f2v-D4-seN" firstAttribute="centerY" secondItem="SgQ-tx-F49" secondAttribute="centerY" constant="-200" id="9rM-LO-WeU"/>
+                            <constraint firstItem="Y1L-Zj-9Sr" firstAttribute="top" secondItem="4AJ-3c-8N9" secondAttribute="bottom" constant="20" id="R5D-jS-GtM"/>
+                            <constraint firstItem="fYd-jB-qyW" firstAttribute="top" secondItem="4AJ-3c-8N9" secondAttribute="bottom" constant="10" id="WVQ-AT-lyr"/>
+                            <constraint firstItem="4AJ-3c-8N9" firstAttribute="centerX" secondItem="SgQ-tx-F49" secondAttribute="centerX" id="ej3-bC-hCd"/>
+                            <constraint firstItem="f2v-D4-seN" firstAttribute="centerX" secondItem="SgQ-tx-F49" secondAttribute="centerX" id="pjt-ks-JdC"/>
+                            <constraint firstItem="80R-7N-4Z9" firstAttribute="centerY" secondItem="SgQ-tx-F49" secondAttribute="centerY" constant="-280" id="vXB-PA-bdu"/>
+                            <constraint firstItem="80R-7N-4Z9" firstAttribute="centerX" secondItem="SgQ-tx-F49" secondAttribute="centerX" id="z08-DV-vBn"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="nQb-9D-dgd"/>
+                    <connections>
+                        <outlet property="amountTextField" destination="Y1L-Zj-9Sr" id="4XQ-Ro-Dwf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z2p-yg-EGx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-773" y="4"/>
+        </scene>
         <!--Game View Controller-->
         <scene sceneID="tXr-a1-R10">
             <objects>
@@ -75,6 +176,9 @@
                                     <fontDescription key="titleFontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="24"/>
                                     <color key="baseBackgroundColor" red="1" green="0.72156862749999995" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="cHq-OO-1qJ" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="VEa-WY-9zT"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lag-v6-qHb">
                                 <rect key="frame" x="169.33333333333334" y="271.66666666666669" width="54.666666666666657" height="36.666666666666686"/>
@@ -152,6 +256,7 @@
                             <constraint firstItem="4qk-I5-YsI" firstAttribute="bottom" secondItem="DJb-6w-3Un" secondAttribute="bottom" constant="30" id="yTC-6w-88t"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="hyZ-gb-EGd"/>
                     <connections>
                         <outlet property="JackPotAmmount" destination="qMH-xf-BAu" id="as7-ej-bzV"/>
                         <outlet property="JackPotImage" destination="jDn-xx-RMS" id="PM6-Vh-SRP"/>
