@@ -1,7 +1,7 @@
 //Slot Machine Project for iOS Development Class for Group 7
 //Adriana Diaz: 301157161 & Aurela Bala: 301279255
 //Date: 22/01/2023
-//Version: 1.0
+//Version: 1.1
 //Implementation of the User Interface for a Slot Machine app. It includes the scenario of the user winning the JackPot
 //It uses SpriteKit to be able to add animation to a couple of components such as the reels and the fireworks
 
@@ -109,11 +109,6 @@ class GameViewController: UIViewController {
                 currentBetLabel.text = String(game.currentBet)
             }
             
-            print(game.currentDraw[0])
-            print(game.currentDraw[1])
-            print(game.currentDraw[2])
-            print(game.availableAmount)
-            print("  ****************")
         }
         //updating the JackPot
         JackPotLabel.text = "$ " + String(game.jackPot)

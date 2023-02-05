@@ -2,8 +2,12 @@
 //  HomeViewController.swift
 //  SlotMachine
 //
-//  Created by Adriana Diaz Torres on 2/3/23.
-//
+//  Created by Adriana Diaz: 301157161 & Aurela Bala: 301279255 on 2/3/23.
+//  Version 1.1
+//  This controller is responsible for all the logic and validation required at the start of a new game
+//  It makes sure that the input in the Text Field can be parse to Int, preventing the user to the wrong type of data
+//  It ensures the amout of money the player will start with is larger than $10. Once completed this process it will proceed through a segue
+//  to the Game Scene
 
 import Foundation
 import UIKit
