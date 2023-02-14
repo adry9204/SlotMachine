@@ -27,7 +27,7 @@ class GameViewController: UIViewController {
     @IBOutlet weak var TotalAmmount: UILabel!
     @IBOutlet weak var currentBetLabel: UILabel!
     @IBOutlet weak var JackPotLabel: UILabel!
-    
+    //var currentScene: GKScene?
     //local variables
     var game: Game = Game(availableAmount: 0, currentBet: 10)
     var initialAmount = 0
@@ -37,7 +37,7 @@ class GameViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+       // displayStartScene()
         initialAmount = game.availableAmount
         //Initializing UI
         TotalAmmount.text = "$ " + String(game.availableAmount)
@@ -153,6 +153,41 @@ class GameViewController: UIViewController {
         globalScene.changeImage(symbolName: leftSymbol, pos: 0)
         globalScene.changeImage(symbolName: middleSymbol, pos: 1)
         globalScene.changeImage(symbolName: rightSymbol, pos: 2)
+        
+    }
+    
+//    func setScene(sceneName: String) -> Void
+//    {
+//
+//        currentScene = GKScene(fileNamed: sceneName)
+//
+//        if let scene = currentScene!.rootNode as! SKScene?
+//            {
+//
+//                scene.scaleMode = .aspectFill
+//
+//                if let view = self.view as! SKView?
+//                {
+//                    view.presentScene(scene)
+//                    view.ignoresSiblingOrder = true
+//
+//                }
+//            }
+//    }
+
+    
+    func displayStartScene()
+    {
+      //  setScene(sceneName: "StartScene")
+    }
+    
+    func displayStartGame()
+    {
+        
+    }
+    
+    func displaySupportScreen()
+    {
         
     }
 }

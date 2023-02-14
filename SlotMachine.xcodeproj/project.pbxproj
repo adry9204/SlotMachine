@@ -33,11 +33,11 @@
 		28DD8528298E5EE2002DB63A /* bell.png in Resources */ = {isa = PBXBuildFile; fileRef = 28DD8527298E5EE2002DB63A /* bell.png */; };
 		28DD852A298E5FD7002DB63A /* seven.png in Resources */ = {isa = PBXBuildFile; fileRef = 28DD8529298E5FD7002DB63A /* seven.png */; };
 		28DD852E298E63B2002DB63A /* blank.png in Resources */ = {isa = PBXBuildFile; fileRef = 28DD852D298E63B2002DB63A /* blank.png */; };
-		28E68ACA297D985D0086A90A /* b4 copy 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 28E68AC9297D985D0086A90A /* b4 copy 4.png */; };
-		28E68ACC297DA55D0086A90A /* BACKGROUND 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 28E68ACB297DA55D0086A90A /* BACKGROUND 3.png */; };
 		28E68ACE297DAC160086A90A /* Fireworks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E68ACD297DAC160086A90A /* Fireworks.swift */; };
 		28E68AD6297DAE800086A90A /* Fireworks_Transparent_Clip_Art_Image copy 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 28E68AD5297DAE800086A90A /* Fireworks_Transparent_Clip_Art_Image copy 3.png */; };
 		28E68ADA297DB0BF0086A90A /* Rectangle 20 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 28E68AD9297DB0BF0086A90A /* Rectangle 20 2.png */; };
+		3FC3DDE4299B1F9B002A4171 /* StartScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 3FC3DDE3299B1F9B002A4171 /* StartScene.sks */; };
+		3FC3DDE6299B1FD5002A4171 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC3DDE5299B1FD5002A4171 /* StartViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,11 +68,11 @@
 		28DD8527298E5EE2002DB63A /* bell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bell.png; sourceTree = "<group>"; };
 		28DD8529298E5FD7002DB63A /* seven.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = seven.png; sourceTree = "<group>"; };
 		28DD852D298E63B2002DB63A /* blank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blank.png; sourceTree = "<group>"; };
-		28E68AC9297D985D0086A90A /* b4 copy 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "b4 copy 4.png"; sourceTree = "<group>"; };
-		28E68ACB297DA55D0086A90A /* BACKGROUND 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BACKGROUND 3.png"; sourceTree = "<group>"; };
 		28E68ACD297DAC160086A90A /* Fireworks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fireworks.swift; sourceTree = "<group>"; };
 		28E68AD5297DAE800086A90A /* Fireworks_Transparent_Clip_Art_Image copy 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Fireworks_Transparent_Clip_Art_Image copy 3.png"; sourceTree = "<group>"; };
 		28E68AD9297DB0BF0086A90A /* Rectangle 20 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Rectangle 20 2.png"; sourceTree = "<group>"; };
+		3FC3DDE3299B1F9B002A4171 /* StartScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = StartScene.sks; sourceTree = "<group>"; };
+		3FC3DDE5299B1FD5002A4171 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +89,7 @@
 		280B261F297C515600A2BCB7 = {
 			isa = PBXGroup;
 			children = (
+				3FC3DDE2299B1E08002A4171 /* Scenes */,
 				280B264A297C57BC00A2BCB7 /* Assets */,
 				280B262A297C515700A2BCB7 /* SlotMachine */,
 				280B2629297C515700A2BCB7 /* Products */,
@@ -109,9 +110,7 @@
 				280B2647297C543B00A2BCB7 /* GameObjects */,
 				280B2642297C533800A2BCB7 /* Core */,
 				280B262B297C515700A2BCB7 /* AppDelegate.swift */,
-				280B262D297C515700A2BCB7 /* GameScene.sks */,
 				280B262F297C515700A2BCB7 /* Actions.sks */,
-				280B2631297C515700A2BCB7 /* GameScene.swift */,
 				280B2633297C515700A2BCB7 /* GameViewController.swift */,
 				28DD8517298DA2AD002DB63A /* HomeViewController.swift */,
 				28DD8519298DF270002DB63A /* Game.swift */,
@@ -148,20 +147,29 @@
 				28DD851F298E5BD3002DB63A /* bananas.png */,
 				280B2651297C5B7700A2BCB7 /* tiny cherry.png */,
 				28DD852D298E63B2002DB63A /* blank.png */,
-				28E68ACB297DA55D0086A90A /* BACKGROUND 3.png */,
 				28DD8525298E5DF1002DB63A /* strawberry.png */,
 				28DD8529298E5FD7002DB63A /* seven.png */,
 				28DD8523298E5D31002DB63A /* orange.png */,
 				28DD8527298E5EE2002DB63A /* bell.png */,
 				28DD851B298E46A6002DB63A /* tiny grapes.png */,
 				28E68AD9297DB0BF0086A90A /* Rectangle 20 2.png */,
-				28E68AC9297D985D0086A90A /* b4 copy 4.png */,
 				28E68AD5297DAE800086A90A /* Fireworks_Transparent_Clip_Art_Image copy 3.png */,
 				280B264B297C57BC00A2BCB7 /* 1932834-removebg-preview.png */,
 				280B264C297C57BC00A2BCB7 /* 2082951-removebg-preview.png */,
 				280B264D297C57BC00A2BCB7 /* Grapes-clipart-3.png */,
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		3FC3DDE2299B1E08002A4171 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				280B262D297C515700A2BCB7 /* GameScene.sks */,
+				280B2631297C515700A2BCB7 /* GameScene.swift */,
+				3FC3DDE3299B1F9B002A4171 /* StartScene.sks */,
+				3FC3DDE5299B1FD5002A4171 /* StartViewController.swift */,
+			);
+			path = Scenes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,15 +236,14 @@
 				28DD8520298E5BD3002DB63A /* bananas.png in Resources */,
 				280B262E297C515700A2BCB7 /* GameScene.sks in Resources */,
 				28DD852E298E63B2002DB63A /* blank.png in Resources */,
-				28E68ACC297DA55D0086A90A /* BACKGROUND 3.png in Resources */,
 				280B2639297C515900A2BCB7 /* Assets.xcassets in Resources */,
-				28E68ACA297D985D0086A90A /* b4 copy 4.png in Resources */,
 				28C69ECC297CA26E00B48AFC /* reelBackground.png in Resources */,
 				28DD852A298E5FD7002DB63A /* seven.png in Resources */,
 				28DD851C298E46A6002DB63A /* tiny grapes.png in Resources */,
 				280B263C297C515900A2BCB7 /* LaunchScreen.storyboard in Resources */,
 				280B264E297C57BC00A2BCB7 /* 1932834-removebg-preview.png in Resources */,
 				28DD8528298E5EE2002DB63A /* bell.png in Resources */,
+				3FC3DDE4299B1F9B002A4171 /* StartScene.sks in Resources */,
 				280B2650297C57BC00A2BCB7 /* Grapes-clipart-3.png in Resources */,
 				28E68AD6297DAE800086A90A /* Fireworks_Transparent_Clip_Art_Image copy 3.png in Resources */,
 				28DD8526298E5DF1002DB63A /* strawberry.png in Resources */,
@@ -263,6 +270,7 @@
 				280B262C297C515700A2BCB7 /* AppDelegate.swift in Sources */,
 				28E68ACE297DAC160086A90A /* Fireworks.swift in Sources */,
 				280B2646297C537B00A2BCB7 /* GameObject.swift in Sources */,
+				3FC3DDE6299B1FD5002A4171 /* StartViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
