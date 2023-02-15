@@ -328,7 +328,148 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="45" y="-122"/>
+            <point key="canvasLocation" x="42" y="4"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="YIV-cY-HN3">
+            <objects>
+                <viewController id="gg2-2A-Rk2" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dzU-y8-PCA">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mOq-LW-gBo">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Uvj-jt-qzk">
+                                        <rect key="frame" x="0.0" y="9" width="393" height="1200"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zRj-Rj-pFO">
+                                                <rect key="frame" x="50" y="1071" width="75" height="35"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How to Play our Slot Machine Game" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I4N-Ap-sdM">
+                                                <rect key="frame" x="29" y="28" width="335" height="25"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="23"/>
+                                                <color key="textColor" red="0.44705885649999999" green="0.090196087960000004" blue="0.4352940917" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="X8j-0f-7pA">
+                                                <rect key="frame" x="17" y="61" width="360" height="85"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <string key="text">Slots are a universal favourite game because they are easy to play. There’s nothing complex, no strategy, and it’s fast: you just put in your money, bet and watch what happens. Boom!</string>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" text="On the game starting screen please enter the initial Amount, which should be at least $10." textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="GOM-iH-Wqi">
+                                                <rect key="frame" x="16" y="178" width="360" height="58"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ts3-T6-LSv">
+                                                <rect key="frame" x="143" y="140" width="107" height="38"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Play now" cornerStyle="capsule">
+                                                    <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="22"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="baseBackgroundColor" red="0.44705885649999999" green="0.090196087960000004" blue="0.4352940917" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <segue destination="cHq-OO-1qJ" kind="presentation" modalPresentationStyle="fullScreen" id="mHL-QN-ln8"/>
+                                                </connections>
+                                            </button>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Start.png" translatesAutoresizingMaskIntoConstraints="NO" id="czI-ow-CmG">
+                                                <rect key="frame" x="17" y="224" width="233" height="99"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" text="Now you are ready to start the game." textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="61Q-9p-dro">
+                                                <rect key="frame" x="17" y="323" width="217" height="56"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" text="After you see this view, you are ready to start playing. Good luck! " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fQ7-7s-55a">
+                                                <rect key="frame" x="17" y="373" width="217" height="68"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" text="Step 3: Click the SPIN button to play the reels. The slot machine generate random numbers corrensponding to reels' fruits. " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="HOn-v4-G6T">
+                                                <rect key="frame" x="15" y="488" width="359" height="66.333333333333485"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GameScreen.png" translatesAutoresizingMaskIntoConstraints="NO" id="u9n-5M-aTD">
+                                                <rect key="frame" x="242" y="232" width="147" height="260"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" text="If you will see on the screen the same fruit on each reel, Congratulations, you won the jackpot!" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="reB-FS-UYw">
+                                                <rect key="frame" x="17" y="549" width="359" height="52"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="textColor" red="0.44705885649999999" green="0.090196087960000004" blue="0.4352940917" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Reels" translatesAutoresizingMaskIntoConstraints="NO" id="dmO-l9-ytY">
+                                                <rect key="frame" x="76" y="609" width="240" height="128"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Step 2: Set the bet cliking on the - and + signs. The bet numbers are multiplied by 5." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="bXq-zQ-9uV">
+                                                <rect key="frame" x="17" y="427" width="217" height="57"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1200" id="Zxz-WP-kY5"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Uvj-jt-qzk" secondAttribute="bottom" id="CZZ-tC-Y0w"/>
+                                    <constraint firstItem="Uvj-jt-qzk" firstAttribute="leading" secondItem="mOq-LW-gBo" secondAttribute="leading" id="Ezv-Sn-bUt"/>
+                                    <constraint firstItem="Uvj-jt-qzk" firstAttribute="top" secondItem="mOq-LW-gBo" secondAttribute="top" id="Hfy-Rt-9EM"/>
+                                    <constraint firstAttribute="trailing" secondItem="Uvj-jt-qzk" secondAttribute="trailing" id="vKd-Xv-1bL"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="e1N-qy-tpc"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="mOq-LW-gBo" firstAttribute="trailing" secondItem="e1N-qy-tpc" secondAttribute="trailing" id="2SQ-EU-dDn"/>
+                            <constraint firstItem="mOq-LW-gBo" firstAttribute="top" secondItem="dzU-y8-PCA" secondAttribute="top" id="LGf-9e-VvM"/>
+                            <constraint firstItem="Uvj-jt-qzk" firstAttribute="height" secondItem="dzU-y8-PCA" secondAttribute="height" multiplier="1.40845" id="Yf1-bX-4aG"/>
+                            <constraint firstItem="Uvj-jt-qzk" firstAttribute="width" secondItem="dzU-y8-PCA" secondAttribute="width" id="Zdj-hh-KhP"/>
+                            <constraint firstAttribute="bottom" secondItem="mOq-LW-gBo" secondAttribute="bottom" id="oSW-jo-jwc"/>
+                            <constraint firstItem="mOq-LW-gBo" firstAttribute="leading" secondItem="e1N-qy-tpc" secondAttribute="leading" id="v5J-fo-HhX"/>
+                        </constraints>
+                    </view>
+                    <size key="freeformSize" width="393" height="852"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8ok-nY-R6Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-860.30534351145036" y="754.92957746478874"/>
         </scene>
         <!--Start Scene-->
         <scene sceneID="Ta3-2l-jpa">
@@ -353,15 +494,18 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Pi-1j-J3U">
-                                <rect key="frame" x="100" y="450" width="193" height="50"/>
+                                <rect key="frame" x="104" y="450" width="185" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.7539556623" green="0.0" blue="0.53073631480000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Instructions" cornerStyle="capsule">
+                                <buttonConfiguration key="configuration" style="filled" title="How to Play" cornerStyle="capsule">
                                     <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="33"/>
                                     <color key="baseForegroundColor" systemColor="systemYellowColor"/>
                                     <color key="baseBackgroundColor" red="0.7539556623" green="0.0" blue="0.53073631480000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="gg2-2A-Rk2" kind="presentation" modalPresentationStyle="fullScreen" id="Bf4-zc-7TM"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="b5R-3h-Zyf"/>
@@ -373,8 +517,20 @@
             <point key="canvasLocation" x="-1457" y="4"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="mHL-QN-ln8"/>
+    </inferredMetricsTieBreakers>
     <resources>
+        <image name="GameScreen.png" width="1179" height="2556"/>
+        <image name="Reels" width="800" height="398"/>
+        <image name="Start.png" width="400" height="139"/>
         <image name="jackpot" width="590" height="489"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemGroupedBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

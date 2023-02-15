@@ -38,6 +38,9 @@
 		28E68ADA297DB0BF0086A90A /* Rectangle 20 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 28E68AD9297DB0BF0086A90A /* Rectangle 20 2.png */; };
 		3FC3DDE4299B1F9B002A4171 /* StartScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 3FC3DDE3299B1F9B002A4171 /* StartScene.sks */; };
 		3FC3DDE6299B1FD5002A4171 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC3DDE5299B1FD5002A4171 /* StartViewController.swift */; };
+		3FD13E6F299C859F005EEA70 /* Start.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FD13E6E299C859F005EEA70 /* Start.png */; };
+		3FD13E71299C871C005EEA70 /* GameScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FD13E70299C871C005EEA70 /* GameScreen.png */; };
+		3FD13E73299C8B58005EEA70 /* Reels.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FD13E72299C8B58005EEA70 /* Reels.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +76,9 @@
 		28E68AD9297DB0BF0086A90A /* Rectangle 20 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Rectangle 20 2.png"; sourceTree = "<group>"; };
 		3FC3DDE3299B1F9B002A4171 /* StartScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = StartScene.sks; sourceTree = "<group>"; };
 		3FC3DDE5299B1FD5002A4171 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		3FD13E6E299C859F005EEA70 /* Start.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Start.png; sourceTree = "<group>"; };
+		3FD13E70299C871C005EEA70 /* GameScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GameScreen.png; sourceTree = "<group>"; };
+		3FD13E72299C8B58005EEA70 /* Reels.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Reels.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +162,9 @@
 				28E68AD5297DAE800086A90A /* Fireworks_Transparent_Clip_Art_Image copy 3.png */,
 				280B264B297C57BC00A2BCB7 /* 1932834-removebg-preview.png */,
 				280B264C297C57BC00A2BCB7 /* 2082951-removebg-preview.png */,
+				3FD13E6E299C859F005EEA70 /* Start.png */,
+				3FD13E72299C8B58005EEA70 /* Reels.png */,
+				3FD13E70299C871C005EEA70 /* GameScreen.png */,
 				280B264D297C57BC00A2BCB7 /* Grapes-clipart-3.png */,
 			);
 			path = Assets;
@@ -237,9 +246,12 @@
 				280B262E297C515700A2BCB7 /* GameScene.sks in Resources */,
 				28DD852E298E63B2002DB63A /* blank.png in Resources */,
 				280B2639297C515900A2BCB7 /* Assets.xcassets in Resources */,
+				3FD13E71299C871C005EEA70 /* GameScreen.png in Resources */,
+				3FD13E73299C8B58005EEA70 /* Reels.png in Resources */,
 				28C69ECC297CA26E00B48AFC /* reelBackground.png in Resources */,
 				28DD852A298E5FD7002DB63A /* seven.png in Resources */,
 				28DD851C298E46A6002DB63A /* tiny grapes.png in Resources */,
+				3FD13E6F299C859F005EEA70 /* Start.png in Resources */,
 				280B263C297C515900A2BCB7 /* LaunchScreen.storyboard in Resources */,
 				280B264E297C57BC00A2BCB7 /* 1932834-removebg-preview.png in Resources */,
 				28DD8528298E5EE2002DB63A /* bell.png in Resources */,
