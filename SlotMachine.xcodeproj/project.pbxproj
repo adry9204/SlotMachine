@@ -41,6 +41,10 @@
 		3FD13E6F299C859F005EEA70 /* Start.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FD13E6E299C859F005EEA70 /* Start.png */; };
 		3FD13E71299C871C005EEA70 /* GameScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FD13E70299C871C005EEA70 /* GameScreen.png */; };
 		3FD13E73299C8B58005EEA70 /* Reels.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FD13E72299C8B58005EEA70 /* Reels.png */; };
+		3FD13E75299DCD2E005EEA70 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3FD13E74299DCD2E005EEA70 /* GoogleService-Info.plist */; };
+		3FD13E78299DCE0B005EEA70 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 3FD13E77299DCE0B005EEA70 /* FirebaseDatabase */; };
+		3FD13E7A299DCE0B005EEA70 /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = 3FD13E79299DCE0B005EEA70 /* FirebaseFunctions */; };
+		3FD13E7C299DCE0B005EEA70 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 3FD13E7B299DCE0B005EEA70 /* FirebaseStorage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -79,6 +83,7 @@
 		3FD13E6E299C859F005EEA70 /* Start.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Start.png; sourceTree = "<group>"; };
 		3FD13E70299C871C005EEA70 /* GameScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GameScreen.png; sourceTree = "<group>"; };
 		3FD13E72299C8B58005EEA70 /* Reels.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Reels.png; sourceTree = "<group>"; };
+		3FD13E74299DCD2E005EEA70 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +91,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FD13E78299DCE0B005EEA70 /* FirebaseDatabase in Frameworks */,
+				3FD13E7A299DCE0B005EEA70 /* FirebaseFunctions in Frameworks */,
+				3FD13E7C299DCE0B005EEA70 /* FirebaseStorage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +103,7 @@
 		280B261F297C515600A2BCB7 = {
 			isa = PBXGroup;
 			children = (
+				3FD13E9D299DCF9D005EEA70 /* Firebase */,
 				3FC3DDE2299B1E08002A4171 /* Scenes */,
 				280B264A297C57BC00A2BCB7 /* Assets */,
 				280B262A297C515700A2BCB7 /* SlotMachine */,
@@ -123,6 +132,7 @@
 				280B2635297C515700A2BCB7 /* Main.storyboard */,
 				280B2638297C515900A2BCB7 /* Assets.xcassets */,
 				280B263A297C515900A2BCB7 /* LaunchScreen.storyboard */,
+				3FD13E74299DCD2E005EEA70 /* GoogleService-Info.plist */,
 			);
 			path = SlotMachine;
 			sourceTree = "<group>";
@@ -181,6 +191,13 @@
 			path = Scenes;
 			sourceTree = "<group>";
 		};
+		3FD13E9D299DCF9D005EEA70 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -197,6 +214,11 @@
 			dependencies = (
 			);
 			name = SlotMachine;
+			packageProductDependencies = (
+				3FD13E77299DCE0B005EEA70 /* FirebaseDatabase */,
+				3FD13E79299DCE0B005EEA70 /* FirebaseFunctions */,
+				3FD13E7B299DCE0B005EEA70 /* FirebaseStorage */,
+			);
 			productName = SlotMachine;
 			productReference = 280B2628297C515700A2BCB7 /* SlotMachine.app */;
 			productType = "com.apple.product-type.application";
@@ -225,6 +247,9 @@
 				Base,
 			);
 			mainGroup = 280B261F297C515600A2BCB7;
+			packageReferences = (
+				3FD13E76299DCE0B005EEA70 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 280B2629297C515700A2BCB7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -256,6 +281,7 @@
 				280B264E297C57BC00A2BCB7 /* 1932834-removebg-preview.png in Resources */,
 				28DD8528298E5EE2002DB63A /* bell.png in Resources */,
 				3FC3DDE4299B1F9B002A4171 /* StartScene.sks in Resources */,
+				3FD13E75299DCD2E005EEA70 /* GoogleService-Info.plist in Resources */,
 				280B2650297C57BC00A2BCB7 /* Grapes-clipart-3.png in Resources */,
 				28E68AD6297DAE800086A90A /* Fireworks_Transparent_Clip_Art_Image copy 3.png in Resources */,
 				28DD8526298E5DF1002DB63A /* strawberry.png in Resources */,
@@ -500,6 +526,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3FD13E76299DCE0B005EEA70 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3FD13E77299DCE0B005EEA70 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3FD13E76299DCE0B005EEA70 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		3FD13E79299DCE0B005EEA70 /* FirebaseFunctions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3FD13E76299DCE0B005EEA70 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFunctions;
+		};
+		3FD13E7B299DCE0B005EEA70 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3FD13E76299DCE0B005EEA70 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 280B2620297C515700A2BCB7 /* Project object */;
 }
