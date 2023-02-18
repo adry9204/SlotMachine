@@ -31,7 +31,7 @@ class GameViewController: UIViewController {
     //local variables
     var game: Game = Game(availableAmount: 0, currentBet: 10)
     var initialAmount = 0
-    
+    var amountiInDB = 0
     //Sprite Kit
     var globalScene = GameScene()
     
@@ -66,6 +66,44 @@ class GameViewController: UIViewController {
         
     }
 
+    
+    @IBAction func spinButtonClicked(_ sender: UIButton)
+    {
+        
+        print(JackPotLabel.text!)
+        let jackpotInt = Double(JackPotLabel.text!)!
+        let betInt = Double(currentBetLabel.text!)!
+        var currentJackpot = Int(jackpotInt + betInt)
+        print("Current Jackpot is:", currentJackpot)
+        //insert jackpot info into Firebase
+        
+        //check the jackpot amount from firebase
+        let jackpotID = "-NOY1YN6nl8hk5WbCSQt"
+        
+        PostService.shared.fetchOneJackpot(id: jackpotID )
+        { [self]
+            Jackpot in
+            self.amountiInDB = Int(Double(Jackpot.amount))
+            print("Amount in DB", self.amountiInDB)
+            
+            if(self.amountiInDB < currentJackpot)
+            {
+
+                PostService.shared.updateAllDetails(jackpotID: jackpotID, amount: Double(currentJackpot) ) {(error, reference) in
+                    print("New Jackpot amount added!") }
+            }
+            
+            else
+            {
+                print("Not added")
+            }
+        }
+        
+       
+        super.viewDidLoad()
+        
+    }
+    
    
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
         return .portrait
@@ -102,7 +140,7 @@ class GameViewController: UIViewController {
             gotItButton.isHidden = false
         } else {
             
-            TotalAmmount.text = "$ " + String(game.availableAmount)
+            TotalAmmount.text = String(game.availableAmount)
             
             if(game.currentBet > game.availableAmount){
                 game.currentBet = game.availableAmount
@@ -111,7 +149,7 @@ class GameViewController: UIViewController {
             
         }
         //updating the JackPot
-        JackPotLabel.text = "$ " + String(game.jackPot)
+        JackPotLabel.text = String(game.jackPot)
         
         updateReels()
         //checking if the player ran out of money
@@ -130,7 +168,7 @@ class GameViewController: UIViewController {
         
         //reseting UI
         currentBetLabel.text = "10"
-        TotalAmmount.text = "$ " + String(game.availableAmount)
+        TotalAmmount.text = String(game.availableAmount)
         SpinButton.isEnabled = true
         
     }
@@ -140,7 +178,7 @@ class GameViewController: UIViewController {
         JackPotAmmount.isHidden = true
         gotItButton.isHidden = true
         
-        TotalAmmount.text = "$ " + String(game.availableAmount)
+        TotalAmmount.text = String(game.availableAmount)
         //GET REELS TO INITIAL STATE
     }
     

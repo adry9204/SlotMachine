@@ -45,6 +45,9 @@
 		3FD13E78299DCE0B005EEA70 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 3FD13E77299DCE0B005EEA70 /* FirebaseDatabase */; };
 		3FD13E7A299DCE0B005EEA70 /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = 3FD13E79299DCE0B005EEA70 /* FirebaseFunctions */; };
 		3FD13E7C299DCE0B005EEA70 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 3FD13E7B299DCE0B005EEA70 /* FirebaseStorage */; };
+		3FD43692299F0E2800CC6B2F /* reel2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FD43691299F0E2800CC6B2F /* reel2.png */; };
+		3FD43694299F102300CC6B2F /* buttons.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FD43693299F102300CC6B2F /* buttons.png */; };
+		3FD4369729A08E1000CC6B2F /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD4369629A08E1000CC6B2F /* PostService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -84,6 +87,9 @@
 		3FD13E70299C871C005EEA70 /* GameScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GameScreen.png; sourceTree = "<group>"; };
 		3FD13E72299C8B58005EEA70 /* Reels.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Reels.png; sourceTree = "<group>"; };
 		3FD13E74299DCD2E005EEA70 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3FD43691299F0E2800CC6B2F /* reel2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reel2.png; sourceTree = "<group>"; };
+		3FD43693299F102300CC6B2F /* buttons.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttons.png; sourceTree = "<group>"; };
+		3FD4369629A08E1000CC6B2F /* PostService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +109,7 @@
 		280B261F297C515600A2BCB7 = {
 			isa = PBXGroup;
 			children = (
-				3FD13E9D299DCF9D005EEA70 /* Firebase */,
+				3FD4369529A08E1000CC6B2F /* Firebase */,
 				3FC3DDE2299B1E08002A4171 /* Scenes */,
 				280B264A297C57BC00A2BCB7 /* Assets */,
 				280B262A297C515700A2BCB7 /* SlotMachine */,
@@ -159,6 +165,8 @@
 		280B264A297C57BC00A2BCB7 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				3FD43693299F102300CC6B2F /* buttons.png */,
+				3FD43691299F0E2800CC6B2F /* reel2.png */,
 				28C69ECB297CA26E00B48AFC /* reelBackground.png */,
 				28DD851F298E5BD3002DB63A /* bananas.png */,
 				280B2651297C5B7700A2BCB7 /* tiny cherry.png */,
@@ -191,9 +199,10 @@
 			path = Scenes;
 			sourceTree = "<group>";
 		};
-		3FD13E9D299DCF9D005EEA70 /* Firebase */ = {
+		3FD4369529A08E1000CC6B2F /* Firebase */ = {
 			isa = PBXGroup;
 			children = (
+				3FD4369629A08E1000CC6B2F /* PostService.swift */,
 			);
 			path = Firebase;
 			sourceTree = "<group>";
@@ -269,6 +278,7 @@
 				280B2637297C515700A2BCB7 /* Main.storyboard in Resources */,
 				28DD8520298E5BD3002DB63A /* bananas.png in Resources */,
 				280B262E297C515700A2BCB7 /* GameScene.sks in Resources */,
+				3FD43692299F0E2800CC6B2F /* reel2.png in Resources */,
 				28DD852E298E63B2002DB63A /* blank.png in Resources */,
 				280B2639297C515900A2BCB7 /* Assets.xcassets in Resources */,
 				3FD13E71299C871C005EEA70 /* GameScreen.png in Resources */,
@@ -288,6 +298,7 @@
 				280B2630297C515700A2BCB7 /* Actions.sks in Resources */,
 				280B2652297C5B7700A2BCB7 /* tiny cherry.png in Resources */,
 				280B264F297C57BC00A2BCB7 /* 2082951-removebg-preview.png in Resources */,
+				3FD43694299F102300CC6B2F /* buttons.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,6 +319,7 @@
 				280B262C297C515700A2BCB7 /* AppDelegate.swift in Sources */,
 				28E68ACE297DAC160086A90A /* Fireworks.swift in Sources */,
 				280B2646297C537B00A2BCB7 /* GameObject.swift in Sources */,
+				3FD4369729A08E1000CC6B2F /* PostService.swift in Sources */,
 				3FC3DDE6299B1FD5002A4171 /* StartViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
