@@ -1,7 +1,7 @@
 //Slot Machine Project for iOS Development Class for Group 7
 //Adriana Diaz: 301157161 & Aurela Bala: 301279255
-//Date: 22/01/2023
-//Version: 1.1
+//Date: 08/02/2023
+//Version: 1.3.0
 //Implementation of the User Interface for a Slot Machine app. It includes the scenario of the user winning the JackPot
 //It uses SpriteKit to be able to add animation to a couple of components such as the reels and the fireworks
 
@@ -153,6 +153,11 @@ class GameViewController: UIViewController {
             JackPotAmmount.text = String(game.jackPot)
             JackPotAmmount.isHidden = false
             gotItButton.isHidden = false
+            globalScene.fireworksTop?.isHidden = false
+            globalScene.fireworksBottom?.isHidden = false
+            let action_fireworks = SKAction.fadeIn(withDuration: 2)
+            globalScene.fireworksTop?.run(action_fireworks)
+            globalScene.fireworksBottom?.run(action_fireworks)
         } else {
             
             TotalAmmount.text = String(game.availableAmount)
@@ -192,6 +197,8 @@ class GameViewController: UIViewController {
         JackPotImage.isHidden = true
         JackPotAmmount.isHidden = true
         gotItButton.isHidden = true
+        globalScene.fireworksTop?.isHidden = true
+        globalScene.fireworksBottom?.isHidden = true
         
         TotalAmmount.text = String(game.availableAmount)
         //GET REELS TO INITIAL STATE
@@ -209,25 +216,6 @@ class GameViewController: UIViewController {
         
     }
     
-//    func setScene(sceneName: String) -> Void
-//    {
-//
-//        currentScene = GKScene(fileNamed: sceneName)
-//
-//        if let scene = currentScene!.rootNode as! SKScene?
-//            {
-//
-//                scene.scaleMode = .aspectFill
-//
-//                if let view = self.view as! SKView?
-//                {
-//                    view.presentScene(scene)
-//                    view.ignoresSiblingOrder = true
-//
-//                }
-//            }
-//    }
-
     
     func displayStartScene()
     {

@@ -47,18 +47,24 @@ class GameScene: SKScene {
             scene!.run(SKAction.playSoundFileNamed("sound", waitForCompletion: false))
             //update left reel
             removeChildren(in: [reelLeft!])
-            reelLeft = Reel(xPos: -200, yPos: -60, symbol: symbolName)
+            reelLeft = Reel(xPos: -200, yPos: 0, symbol: symbolName)
             addChild(reelLeft!)
+            let action = SKAction.moveTo(y: -60, duration: 0.15)
+            reelLeft?.run(action)
         case 1:
             //update center
             removeChildren(in: [reelMiddle!])
-            reelMiddle = Reel(xPos: 0, yPos: -60, symbol: symbolName)
+            reelMiddle = Reel(xPos: 0, yPos: 0, symbol: symbolName)
             addChild(reelMiddle!)
+            let action = SKAction.moveTo(y: -60, duration: 0.15)
+            reelMiddle?.run(action)
         default:
             //update right
             removeChildren(in: [reelRight!])
-            reelRight = Reel(xPos: 200, yPos: -60, symbol: symbolName)
+            reelRight = Reel(xPos: 200, yPos: 0, symbol: symbolName)
             addChild(reelRight!)
+            let action = SKAction.moveTo(y: -60, duration: 0.15)
+            reelRight?.run(action)
         }
         
     }
