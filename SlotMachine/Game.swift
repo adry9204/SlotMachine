@@ -184,11 +184,8 @@ class Game {
   
 }
 
-
-
-
-
-enum ReelSymbol {
+enum ReelSymbol
+{
     case Blank;
     case Grapes;
     case Bananas;

@@ -43,32 +43,40 @@ class GameScene: SKScene {
     func changeImage(symbolName: String, pos: Int) {
         switch pos {
         case 0:
+            let reelSound = SKAudioNode(fileNamed: "sound.mp3")
+            scene!.run(SKAction.playSoundFileNamed("sound", waitForCompletion: false))
             //update left reel
             removeChildren(in: [reelLeft!])
-            reelLeft = Reel(xPos: -200, yPos: -60, symbol: symbolName)
+            reelLeft = Reel(xPos: -200, yPos: 0, symbol: symbolName)
             addChild(reelLeft!)
+            let action = SKAction.moveTo(y: -60, duration: 0.15)
+            reelLeft?.run(action)
         case 1:
             //update center
             removeChildren(in: [reelMiddle!])
-            reelMiddle = Reel(xPos: 0, yPos: -60, symbol: symbolName)
+            reelMiddle = Reel(xPos: 0, yPos: 0, symbol: symbolName)
             addChild(reelMiddle!)
+            let action = SKAction.moveTo(y: -60, duration: 0.15)
+            reelMiddle?.run(action)
         default:
             //update right
             removeChildren(in: [reelRight!])
-            reelRight = Reel(xPos: 200, yPos: -60, symbol: symbolName)
+            reelRight = Reel(xPos: 200, yPos: 0, symbol: symbolName)
             addChild(reelRight!)
+            let action = SKAction.moveTo(y: -60, duration: 0.15)
+            reelRight?.run(action)
         }
         
     }
     
     func touchDown(atPoint pos : CGPoint) {
-        if fireworksTop!.isHidden {
-            fireworksTop?.isHidden = false
-            fireworksBottom?.isHidden = false
-        } else {
-            fireworksTop?.isHidden = true
-            fireworksBottom?.isHidden = true
-        }
+//        if fireworksTop!.isHidden {
+//            fireworksTop?.isHidden = false
+//            fireworksBottom?.isHidden = false
+//        } else {
+//            fireworksTop?.isHidden = true
+//            fireworksBottom?.isHidden = true
+//        }
     }
     
     func touchMoved(toPoint pos : CGPoint) {

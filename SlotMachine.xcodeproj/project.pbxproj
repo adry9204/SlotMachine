@@ -33,11 +33,21 @@
 		28DD8528298E5EE2002DB63A /* bell.png in Resources */ = {isa = PBXBuildFile; fileRef = 28DD8527298E5EE2002DB63A /* bell.png */; };
 		28DD852A298E5FD7002DB63A /* seven.png in Resources */ = {isa = PBXBuildFile; fileRef = 28DD8529298E5FD7002DB63A /* seven.png */; };
 		28DD852E298E63B2002DB63A /* blank.png in Resources */ = {isa = PBXBuildFile; fileRef = 28DD852D298E63B2002DB63A /* blank.png */; };
-		28E68ACA297D985D0086A90A /* b4 copy 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 28E68AC9297D985D0086A90A /* b4 copy 4.png */; };
-		28E68ACC297DA55D0086A90A /* BACKGROUND 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 28E68ACB297DA55D0086A90A /* BACKGROUND 3.png */; };
 		28E68ACE297DAC160086A90A /* Fireworks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E68ACD297DAC160086A90A /* Fireworks.swift */; };
 		28E68AD6297DAE800086A90A /* Fireworks_Transparent_Clip_Art_Image copy 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 28E68AD5297DAE800086A90A /* Fireworks_Transparent_Clip_Art_Image copy 3.png */; };
 		28E68ADA297DB0BF0086A90A /* Rectangle 20 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 28E68AD9297DB0BF0086A90A /* Rectangle 20 2.png */; };
+		3FD13E6F299C859F005EEA70 /* Start.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FD13E6E299C859F005EEA70 /* Start.png */; };
+		3FD13E71299C871C005EEA70 /* GameScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FD13E70299C871C005EEA70 /* GameScreen.png */; };
+		3FD13E73299C8B58005EEA70 /* Reels.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FD13E72299C8B58005EEA70 /* Reels.png */; };
+		3FD13E75299DCD2E005EEA70 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3FD13E74299DCD2E005EEA70 /* GoogleService-Info.plist */; };
+		3FD13E78299DCE0B005EEA70 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 3FD13E77299DCE0B005EEA70 /* FirebaseDatabase */; };
+		3FD13E7A299DCE0B005EEA70 /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = 3FD13E79299DCE0B005EEA70 /* FirebaseFunctions */; };
+		3FD13E7C299DCE0B005EEA70 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 3FD13E7B299DCE0B005EEA70 /* FirebaseStorage */; };
+		3FD43692299F0E2800CC6B2F /* reel2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FD43691299F0E2800CC6B2F /* reel2.png */; };
+		3FD43694299F102300CC6B2F /* buttons.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FD43693299F102300CC6B2F /* buttons.png */; };
+		3FD4369729A08E1000CC6B2F /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD4369629A08E1000CC6B2F /* PostService.swift */; };
+		3FD4369929A1B71C00CC6B2F /* slot.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3FD4369829A1B71C00CC6B2F /* slot.mp3 */; };
+		3FD4369B29A1BA6B00CC6B2F /* sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3FD4369A29A1BA6B00CC6B2F /* sound.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,11 +78,18 @@
 		28DD8527298E5EE2002DB63A /* bell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bell.png; sourceTree = "<group>"; };
 		28DD8529298E5FD7002DB63A /* seven.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = seven.png; sourceTree = "<group>"; };
 		28DD852D298E63B2002DB63A /* blank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blank.png; sourceTree = "<group>"; };
-		28E68AC9297D985D0086A90A /* b4 copy 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "b4 copy 4.png"; sourceTree = "<group>"; };
-		28E68ACB297DA55D0086A90A /* BACKGROUND 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BACKGROUND 3.png"; sourceTree = "<group>"; };
 		28E68ACD297DAC160086A90A /* Fireworks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fireworks.swift; sourceTree = "<group>"; };
 		28E68AD5297DAE800086A90A /* Fireworks_Transparent_Clip_Art_Image copy 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Fireworks_Transparent_Clip_Art_Image copy 3.png"; sourceTree = "<group>"; };
 		28E68AD9297DB0BF0086A90A /* Rectangle 20 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Rectangle 20 2.png"; sourceTree = "<group>"; };
+		3FD13E6E299C859F005EEA70 /* Start.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Start.png; sourceTree = "<group>"; };
+		3FD13E70299C871C005EEA70 /* GameScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GameScreen.png; sourceTree = "<group>"; };
+		3FD13E72299C8B58005EEA70 /* Reels.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Reels.png; sourceTree = "<group>"; };
+		3FD13E74299DCD2E005EEA70 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3FD43691299F0E2800CC6B2F /* reel2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reel2.png; sourceTree = "<group>"; };
+		3FD43693299F102300CC6B2F /* buttons.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttons.png; sourceTree = "<group>"; };
+		3FD4369629A08E1000CC6B2F /* PostService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostService.swift; sourceTree = "<group>"; };
+		3FD4369829A1B71C00CC6B2F /* slot.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = slot.mp3; sourceTree = "<group>"; };
+		3FD4369A29A1BA6B00CC6B2F /* sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sound.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +97,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FD13E78299DCE0B005EEA70 /* FirebaseDatabase in Frameworks */,
+				3FD13E7A299DCE0B005EEA70 /* FirebaseFunctions in Frameworks */,
+				3FD13E7C299DCE0B005EEA70 /* FirebaseStorage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +109,8 @@
 		280B261F297C515600A2BCB7 = {
 			isa = PBXGroup;
 			children = (
+				3FD4369529A08E1000CC6B2F /* Firebase */,
+				3FC3DDE2299B1E08002A4171 /* Scenes */,
 				280B264A297C57BC00A2BCB7 /* Assets */,
 				280B262A297C515700A2BCB7 /* SlotMachine */,
 				280B2629297C515700A2BCB7 /* Products */,
@@ -109,15 +131,14 @@
 				280B2647297C543B00A2BCB7 /* GameObjects */,
 				280B2642297C533800A2BCB7 /* Core */,
 				280B262B297C515700A2BCB7 /* AppDelegate.swift */,
-				280B262D297C515700A2BCB7 /* GameScene.sks */,
 				280B262F297C515700A2BCB7 /* Actions.sks */,
-				280B2631297C515700A2BCB7 /* GameScene.swift */,
 				280B2633297C515700A2BCB7 /* GameViewController.swift */,
 				28DD8517298DA2AD002DB63A /* HomeViewController.swift */,
 				28DD8519298DF270002DB63A /* Game.swift */,
 				280B2635297C515700A2BCB7 /* Main.storyboard */,
 				280B2638297C515900A2BCB7 /* Assets.xcassets */,
 				280B263A297C515900A2BCB7 /* LaunchScreen.storyboard */,
+				3FD13E74299DCD2E005EEA70 /* GoogleService-Info.plist */,
 			);
 			path = SlotMachine;
 			sourceTree = "<group>";
@@ -144,24 +165,46 @@
 		280B264A297C57BC00A2BCB7 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				3FD4369A29A1BA6B00CC6B2F /* sound.mp3 */,
+				3FD4369829A1B71C00CC6B2F /* slot.mp3 */,
+				3FD43693299F102300CC6B2F /* buttons.png */,
+				3FD43691299F0E2800CC6B2F /* reel2.png */,
 				28C69ECB297CA26E00B48AFC /* reelBackground.png */,
 				28DD851F298E5BD3002DB63A /* bananas.png */,
 				280B2651297C5B7700A2BCB7 /* tiny cherry.png */,
 				28DD852D298E63B2002DB63A /* blank.png */,
-				28E68ACB297DA55D0086A90A /* BACKGROUND 3.png */,
 				28DD8525298E5DF1002DB63A /* strawberry.png */,
 				28DD8529298E5FD7002DB63A /* seven.png */,
 				28DD8523298E5D31002DB63A /* orange.png */,
 				28DD8527298E5EE2002DB63A /* bell.png */,
 				28DD851B298E46A6002DB63A /* tiny grapes.png */,
 				28E68AD9297DB0BF0086A90A /* Rectangle 20 2.png */,
-				28E68AC9297D985D0086A90A /* b4 copy 4.png */,
 				28E68AD5297DAE800086A90A /* Fireworks_Transparent_Clip_Art_Image copy 3.png */,
 				280B264B297C57BC00A2BCB7 /* 1932834-removebg-preview.png */,
 				280B264C297C57BC00A2BCB7 /* 2082951-removebg-preview.png */,
+				3FD13E6E299C859F005EEA70 /* Start.png */,
+				3FD13E72299C8B58005EEA70 /* Reels.png */,
+				3FD13E70299C871C005EEA70 /* GameScreen.png */,
 				280B264D297C57BC00A2BCB7 /* Grapes-clipart-3.png */,
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		3FC3DDE2299B1E08002A4171 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				280B262D297C515700A2BCB7 /* GameScene.sks */,
+				280B2631297C515700A2BCB7 /* GameScene.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		3FD4369529A08E1000CC6B2F /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				3FD4369629A08E1000CC6B2F /* PostService.swift */,
+			);
+			path = Firebase;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,6 +223,11 @@
 			dependencies = (
 			);
 			name = SlotMachine;
+			packageProductDependencies = (
+				3FD13E77299DCE0B005EEA70 /* FirebaseDatabase */,
+				3FD13E79299DCE0B005EEA70 /* FirebaseFunctions */,
+				3FD13E7B299DCE0B005EEA70 /* FirebaseStorage */,
+			);
 			productName = SlotMachine;
 			productReference = 280B2628297C515700A2BCB7 /* SlotMachine.app */;
 			productType = "com.apple.product-type.application";
@@ -208,6 +256,9 @@
 				Base,
 			);
 			mainGroup = 280B261F297C515600A2BCB7;
+			packageReferences = (
+				3FD13E76299DCE0B005EEA70 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 280B2629297C515700A2BCB7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -227,22 +278,28 @@
 				280B2637297C515700A2BCB7 /* Main.storyboard in Resources */,
 				28DD8520298E5BD3002DB63A /* bananas.png in Resources */,
 				280B262E297C515700A2BCB7 /* GameScene.sks in Resources */,
+				3FD43692299F0E2800CC6B2F /* reel2.png in Resources */,
 				28DD852E298E63B2002DB63A /* blank.png in Resources */,
-				28E68ACC297DA55D0086A90A /* BACKGROUND 3.png in Resources */,
 				280B2639297C515900A2BCB7 /* Assets.xcassets in Resources */,
-				28E68ACA297D985D0086A90A /* b4 copy 4.png in Resources */,
+				3FD13E71299C871C005EEA70 /* GameScreen.png in Resources */,
+				3FD13E73299C8B58005EEA70 /* Reels.png in Resources */,
 				28C69ECC297CA26E00B48AFC /* reelBackground.png in Resources */,
 				28DD852A298E5FD7002DB63A /* seven.png in Resources */,
 				28DD851C298E46A6002DB63A /* tiny grapes.png in Resources */,
+				3FD13E6F299C859F005EEA70 /* Start.png in Resources */,
 				280B263C297C515900A2BCB7 /* LaunchScreen.storyboard in Resources */,
 				280B264E297C57BC00A2BCB7 /* 1932834-removebg-preview.png in Resources */,
+				3FD4369929A1B71C00CC6B2F /* slot.mp3 in Resources */,
 				28DD8528298E5EE2002DB63A /* bell.png in Resources */,
+				3FD13E75299DCD2E005EEA70 /* GoogleService-Info.plist in Resources */,
+				3FD4369B29A1BA6B00CC6B2F /* sound.mp3 in Resources */,
 				280B2650297C57BC00A2BCB7 /* Grapes-clipart-3.png in Resources */,
 				28E68AD6297DAE800086A90A /* Fireworks_Transparent_Clip_Art_Image copy 3.png in Resources */,
 				28DD8526298E5DF1002DB63A /* strawberry.png in Resources */,
 				280B2630297C515700A2BCB7 /* Actions.sks in Resources */,
 				280B2652297C5B7700A2BCB7 /* tiny cherry.png in Resources */,
 				280B264F297C57BC00A2BCB7 /* 2082951-removebg-preview.png in Resources */,
+				3FD43694299F102300CC6B2F /* buttons.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +320,7 @@
 				280B262C297C515700A2BCB7 /* AppDelegate.swift in Sources */,
 				28E68ACE297DAC160086A90A /* Fireworks.swift in Sources */,
 				280B2646297C537B00A2BCB7 /* GameObject.swift in Sources */,
+				3FD4369729A08E1000CC6B2F /* PostService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -480,6 +538,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3FD13E76299DCE0B005EEA70 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3FD13E77299DCE0B005EEA70 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3FD13E76299DCE0B005EEA70 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		3FD13E79299DCE0B005EEA70 /* FirebaseFunctions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3FD13E76299DCE0B005EEA70 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFunctions;
+		};
+		3FD13E7B299DCE0B005EEA70 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3FD13E76299DCE0B005EEA70 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 280B2620297C515700A2BCB7 /* Project object */;
 }

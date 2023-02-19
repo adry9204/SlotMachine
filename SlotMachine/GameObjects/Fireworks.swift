@@ -34,10 +34,6 @@ class Fireworks : GameObject
         
     }
     
-    
-    
-    
-    
 }
 
 
