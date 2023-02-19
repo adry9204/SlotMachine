@@ -29,6 +29,7 @@ class GameViewController: UIViewController {
     @IBOutlet weak var JackPotLabel: UILabel!
     //var currentScene: GKScene?
     //local variables
+    @IBOutlet weak var globalJackpot: UILabel!
     var game: Game = Game(availableAmount: 0, currentBet: 10)
     var initialAmount = 0
     var amountiInDB = 0
@@ -63,13 +64,26 @@ class GameViewController: UIViewController {
                 globalScene = sceneNode
             }
         }
+        fetchJackpot()
         
     }
-
+    func fetchJackpot()
+    {
+        let jackpotID = "-NOY1YN6nl8hk5WbCSQt"
+        
+        PostService.shared.fetchOneJackpot(id: jackpotID )
+        { [self]
+            Jackpot in
+            self.amountiInDB = Int(Double(Jackpot.amount))
+            print("Amount in DB", self.amountiInDB)
+            globalJackpot.text = String(Int(amountiInDB))
+            
+        }
+    }
     
     @IBAction func spinButtonClicked(_ sender: UIButton)
     {
-        
+       
         print(JackPotLabel.text!)
         let jackpotInt = Double(JackPotLabel.text!)!
         let betInt = Double(currentBetLabel.text!)!
@@ -91,6 +105,7 @@ class GameViewController: UIViewController {
 
                 PostService.shared.updateAllDetails(jackpotID: jackpotID, amount: Double(currentJackpot) ) {(error, reference) in
                     print("New Jackpot amount added!") }
+                globalJackpot.text = String(Int(currentJackpot))
             }
             
             else

@@ -36,8 +36,6 @@
 		28E68ACE297DAC160086A90A /* Fireworks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E68ACD297DAC160086A90A /* Fireworks.swift */; };
 		28E68AD6297DAE800086A90A /* Fireworks_Transparent_Clip_Art_Image copy 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 28E68AD5297DAE800086A90A /* Fireworks_Transparent_Clip_Art_Image copy 3.png */; };
 		28E68ADA297DB0BF0086A90A /* Rectangle 20 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 28E68AD9297DB0BF0086A90A /* Rectangle 20 2.png */; };
-		3FC3DDE4299B1F9B002A4171 /* StartScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 3FC3DDE3299B1F9B002A4171 /* StartScene.sks */; };
-		3FC3DDE6299B1FD5002A4171 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC3DDE5299B1FD5002A4171 /* StartViewController.swift */; };
 		3FD13E6F299C859F005EEA70 /* Start.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FD13E6E299C859F005EEA70 /* Start.png */; };
 		3FD13E71299C871C005EEA70 /* GameScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FD13E70299C871C005EEA70 /* GameScreen.png */; };
 		3FD13E73299C8B58005EEA70 /* Reels.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FD13E72299C8B58005EEA70 /* Reels.png */; };
@@ -48,6 +46,8 @@
 		3FD43692299F0E2800CC6B2F /* reel2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FD43691299F0E2800CC6B2F /* reel2.png */; };
 		3FD43694299F102300CC6B2F /* buttons.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FD43693299F102300CC6B2F /* buttons.png */; };
 		3FD4369729A08E1000CC6B2F /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD4369629A08E1000CC6B2F /* PostService.swift */; };
+		3FD4369929A1B71C00CC6B2F /* slot.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3FD4369829A1B71C00CC6B2F /* slot.mp3 */; };
+		3FD4369B29A1BA6B00CC6B2F /* sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3FD4369A29A1BA6B00CC6B2F /* sound.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -81,8 +81,6 @@
 		28E68ACD297DAC160086A90A /* Fireworks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fireworks.swift; sourceTree = "<group>"; };
 		28E68AD5297DAE800086A90A /* Fireworks_Transparent_Clip_Art_Image copy 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Fireworks_Transparent_Clip_Art_Image copy 3.png"; sourceTree = "<group>"; };
 		28E68AD9297DB0BF0086A90A /* Rectangle 20 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Rectangle 20 2.png"; sourceTree = "<group>"; };
-		3FC3DDE3299B1F9B002A4171 /* StartScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = StartScene.sks; sourceTree = "<group>"; };
-		3FC3DDE5299B1FD5002A4171 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		3FD13E6E299C859F005EEA70 /* Start.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Start.png; sourceTree = "<group>"; };
 		3FD13E70299C871C005EEA70 /* GameScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GameScreen.png; sourceTree = "<group>"; };
 		3FD13E72299C8B58005EEA70 /* Reels.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Reels.png; sourceTree = "<group>"; };
@@ -90,6 +88,8 @@
 		3FD43691299F0E2800CC6B2F /* reel2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reel2.png; sourceTree = "<group>"; };
 		3FD43693299F102300CC6B2F /* buttons.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttons.png; sourceTree = "<group>"; };
 		3FD4369629A08E1000CC6B2F /* PostService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostService.swift; sourceTree = "<group>"; };
+		3FD4369829A1B71C00CC6B2F /* slot.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = slot.mp3; sourceTree = "<group>"; };
+		3FD4369A29A1BA6B00CC6B2F /* sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sound.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +165,8 @@
 		280B264A297C57BC00A2BCB7 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				3FD4369A29A1BA6B00CC6B2F /* sound.mp3 */,
+				3FD4369829A1B71C00CC6B2F /* slot.mp3 */,
 				3FD43693299F102300CC6B2F /* buttons.png */,
 				3FD43691299F0E2800CC6B2F /* reel2.png */,
 				28C69ECB297CA26E00B48AFC /* reelBackground.png */,
@@ -193,8 +195,6 @@
 			children = (
 				280B262D297C515700A2BCB7 /* GameScene.sks */,
 				280B2631297C515700A2BCB7 /* GameScene.swift */,
-				3FC3DDE3299B1F9B002A4171 /* StartScene.sks */,
-				3FC3DDE5299B1FD5002A4171 /* StartViewController.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -289,9 +289,10 @@
 				3FD13E6F299C859F005EEA70 /* Start.png in Resources */,
 				280B263C297C515900A2BCB7 /* LaunchScreen.storyboard in Resources */,
 				280B264E297C57BC00A2BCB7 /* 1932834-removebg-preview.png in Resources */,
+				3FD4369929A1B71C00CC6B2F /* slot.mp3 in Resources */,
 				28DD8528298E5EE2002DB63A /* bell.png in Resources */,
-				3FC3DDE4299B1F9B002A4171 /* StartScene.sks in Resources */,
 				3FD13E75299DCD2E005EEA70 /* GoogleService-Info.plist in Resources */,
+				3FD4369B29A1BA6B00CC6B2F /* sound.mp3 in Resources */,
 				280B2650297C57BC00A2BCB7 /* Grapes-clipart-3.png in Resources */,
 				28E68AD6297DAE800086A90A /* Fireworks_Transparent_Clip_Art_Image copy 3.png in Resources */,
 				28DD8526298E5DF1002DB63A /* strawberry.png in Resources */,
@@ -320,7 +321,6 @@
 				28E68ACE297DAC160086A90A /* Fireworks.swift in Sources */,
 				280B2646297C537B00A2BCB7 /* GameObject.swift in Sources */,
 				3FD4369729A08E1000CC6B2F /* PostService.swift in Sources */,
-				3FC3DDE6299B1FD5002A4171 /* StartViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

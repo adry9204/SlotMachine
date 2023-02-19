@@ -43,6 +43,8 @@ class GameScene: SKScene {
     func changeImage(symbolName: String, pos: Int) {
         switch pos {
         case 0:
+            let reelSound = SKAudioNode(fileNamed: "sound.mp3")
+            scene!.run(SKAction.playSoundFileNamed("sound", waitForCompletion: false))
             //update left reel
             removeChildren(in: [reelLeft!])
             reelLeft = Reel(xPos: -200, yPos: -60, symbol: symbolName)
@@ -62,13 +64,13 @@ class GameScene: SKScene {
     }
     
     func touchDown(atPoint pos : CGPoint) {
-        if fireworksTop!.isHidden {
-            fireworksTop?.isHidden = false
-            fireworksBottom?.isHidden = false
-        } else {
-            fireworksTop?.isHidden = true
-            fireworksBottom?.isHidden = true
-        }
+//        if fireworksTop!.isHidden {
+//            fireworksTop?.isHidden = false
+//            fireworksBottom?.isHidden = false
+//        } else {
+//            fireworksTop?.isHidden = true
+//            fireworksBottom?.isHidden = true
+//        }
     }
     
     func touchMoved(toPoint pos : CGPoint) {

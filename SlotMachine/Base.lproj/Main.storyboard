@@ -214,8 +214,8 @@
                                 <nil key="highlightedColor"/>
                                 <size key="shadowOffset" width="2" height="-1"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="JackPot: $" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pWa-61-T3Y">
-                                <rect key="frame" x="20" y="654" width="131" height="37"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JackPot: $" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pWa-61-T3Y">
+                                <rect key="frame" x="20" y="654" width="119" height="37"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="28"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -253,23 +253,8 @@
                                     <action selector="plusButtonPressed:" destination="BV1-FR-VrT" eventType="touchUpInside" id="cPJ-cK-Voi"/>
                                 </connections>
                             </button>
-                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="jackpot" translatesAutoresizingMaskIntoConstraints="NO" id="jDn-xx-RMS">
-                                <rect key="frame" x="-4" y="209" width="400.33333333333326" height="340"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="340" id="n6B-fr-PvD"/>
-                                    <constraint firstAttribute="width" constant="400" id="nxX-RJ-25L"/>
-                                </constraints>
-                            </imageView>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="$10 000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qMH-xf-BAu">
-                                <rect key="frame" x="63" y="423" width="265.33333333333331" height="92"/>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="70"/>
-                                <color key="textColor" red="1" green="0.72156862749999995" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <size key="shadowOffset" width="2" height="-1"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="1000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fe9-e1-L75">
-                                <rect key="frame" x="152" y="654" width="112" height="37"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fe9-e1-L75">
+                                <rect key="frame" x="140" y="654" width="100.33333333333331" height="37"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="112" id="iXv-mV-jIx"/>
                                 </constraints>
@@ -277,6 +262,35 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                                 <size key="shadowOffset" width="2" height="-1"/>
+                            </label>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="jackpot" translatesAutoresizingMaskIntoConstraints="NO" id="jDn-xx-RMS">
+                                <rect key="frame" x="-4" y="306" width="400.33333333333326" height="340"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="340" id="n6B-fr-PvD"/>
+                                    <constraint firstAttribute="width" constant="400" id="nxX-RJ-25L"/>
+                                </constraints>
+                            </imageView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="$10 000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qMH-xf-BAu">
+                                <rect key="frame" x="63" y="520" width="265.33333333333331" height="92"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="70"/>
+                                <color key="textColor" red="1" green="0.72156862749999995" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="2" height="-1"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Global Jackpot: $" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UFB-LH-hl9">
+                                <rect key="frame" x="20" y="224" width="196" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="28"/>
+                                <color key="textColor" red="0.95686274510000002" green="0.9413590194" blue="0.2998931078" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="72p-Nn-Xcp">
+                                <rect key="frame" x="224" y="224" width="62" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="27"/>
+                                <color key="textColor" red="0.95686274510000002" green="0.9413590194" blue="0.2998931078" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4qk-I5-YsI"/>
@@ -298,13 +312,13 @@
                             <constraint firstItem="lag-v6-qHb" firstAttribute="centerX" secondItem="3se-qz-xqx" secondAttribute="centerX" id="Wbr-jf-uey"/>
                             <constraint firstItem="pWa-61-T3Y" firstAttribute="baseline" secondItem="Fe9-e1-L75" secondAttribute="baseline" id="aSV-Eq-a2b"/>
                             <constraint firstItem="4qk-I5-YsI" firstAttribute="bottom" secondItem="StT-rQ-zDq" secondAttribute="bottom" constant="30" id="aak-LL-L9n"/>
-                            <constraint firstItem="qMH-xf-BAu" firstAttribute="centerY" secondItem="3se-qz-xqx" secondAttribute="centerY" constant="160" id="bsb-RR-bQL"/>
+                            <constraint firstItem="qMH-xf-BAu" firstAttribute="centerY" secondItem="3se-qz-xqx" secondAttribute="centerY" constant="140" id="bsb-RR-bQL"/>
                             <constraint firstItem="Fe9-e1-L75" firstAttribute="leading" secondItem="pWa-61-T3Y" secondAttribute="trailing" constant="1" id="etS-Ty-9Fp"/>
                             <constraint firstItem="Woz-xn-57y" firstAttribute="centerY" secondItem="3se-qz-xqx" secondAttribute="centerY" constant="-136" id="eyi-ai-pS2"/>
                             <constraint firstItem="Qzq-qO-c4U" firstAttribute="centerX" secondItem="3se-qz-xqx" secondAttribute="centerX" id="iq8-Gn-JXs"/>
-                            <constraint firstItem="vFw-iw-AqM" firstAttribute="top" secondItem="jDn-xx-RMS" secondAttribute="bottom" constant="16" id="qav-Ao-SbQ"/>
+                            <constraint firstItem="vFw-iw-AqM" firstAttribute="top" secondItem="jDn-xx-RMS" secondAttribute="bottom" constant="36" id="qav-Ao-SbQ"/>
                             <constraint firstItem="vFw-iw-AqM" firstAttribute="centerX" secondItem="3se-qz-xqx" secondAttribute="centerX" id="qsN-M1-4Vi"/>
-                            <constraint firstItem="jDn-xx-RMS" firstAttribute="centerY" secondItem="3se-qz-xqx" secondAttribute="centerY" constant="70" id="r1d-ln-j7X"/>
+                            <constraint firstItem="jDn-xx-RMS" firstAttribute="centerY" secondItem="3se-qz-xqx" secondAttribute="centerY" constant="50" id="r1d-ln-j7X"/>
                             <constraint firstItem="lag-v6-qHb" firstAttribute="centerY" secondItem="3se-qz-xqx" secondAttribute="centerY" constant="-136" id="sbC-hW-L9p"/>
                             <constraint firstItem="Woz-xn-57y" firstAttribute="centerX" secondItem="3se-qz-xqx" secondAttribute="centerX" constant="60" id="ucQ-BN-scC"/>
                             <constraint firstItem="z3J-M7-exN" firstAttribute="centerY" secondItem="3se-qz-xqx" secondAttribute="centerY" constant="-136" id="vNG-be-1fM"/>
@@ -319,6 +333,7 @@
                         <outlet property="SpinButton" destination="T7c-OB-TKI" id="t23-6a-MQj"/>
                         <outlet property="TotalAmmount" destination="Qzq-qO-c4U" id="ETt-rO-kNa"/>
                         <outlet property="currentBetLabel" destination="lag-v6-qHb" id="s7u-cA-0NK"/>
+                        <outlet property="globalJackpot" destination="72p-Nn-Xcp" id="Ih6-ci-Utx"/>
                         <outlet property="gotItButton" destination="vFw-iw-AqM" id="mCt-zO-fjS"/>
                     </connections>
                 </viewController>
